@@ -4,14 +4,9 @@ import '/components/archive_task_div/archive_task_div_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'archive_tasks_model.dart';
 export 'archive_tasks_model.dart';
 
@@ -59,8 +54,8 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -79,8 +74,8 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -113,7 +108,7 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
@@ -121,7 +116,7 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                   Stack(
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 50.0, 16.0, 0.0),
                         child: FutureBuilder<List<TasksRow>>(
                           future: TasksTable().queryRows(
@@ -165,7 +160,7 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 12.0, 16.0, 12.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -179,7 +174,7 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: Text(
                                             'Total Completed Tasks',
@@ -195,7 +190,7 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 12.0, 0.0, 0.0),
                                           child: Text(
                                             containerTasksRowList.length
@@ -245,8 +240,8 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                                                       (alertDialogContext) {
                                                     return AlertDialog(
                                                       title:
-                                                          Text('Clear Archive'),
-                                                      content: Text(
+                                                          const Text('Clear Archive'),
+                                                      content: const Text(
                                                           'Are you certain? This cannot be undone.'),
                                                       actions: [
                                                         TextButton(
@@ -254,7 +249,7 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                                                               Navigator.pop(
                                                                   alertDialogContext,
                                                                   false),
-                                                          child: Text('Cancel'),
+                                                          child: const Text('Cancel'),
                                                         ),
                                                         TextButton(
                                                           onPressed: () =>
@@ -262,7 +257,7 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                                                                   alertDialogContext,
                                                                   true),
                                                           child:
-                                                              Text('Confirm'),
+                                                              const Text('Confirm'),
                                                         ),
                                                       ],
                                                     );
@@ -285,13 +280,13 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                                             context: context,
                                             builder: (alertDialogContext) {
                                               return AlertDialog(
-                                                title: Text('Archive Cleared'),
+                                                title: const Text('Archive Cleared'),
                                                 actions: [
                                                   TextButton(
                                                     onPressed: () =>
                                                         Navigator.pop(
                                                             alertDialogContext),
-                                                    child: Text('Ok'),
+                                                    child: const Text('Ok'),
                                                   ),
                                                 ],
                                               );
@@ -302,13 +297,13 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                                             context: context,
                                             builder: (alertDialogContext) {
                                               return AlertDialog(
-                                                title: Text('Cancelled'),
+                                                title: const Text('Cancelled'),
                                                 actions: [
                                                   TextButton(
                                                     onPressed: () =>
                                                         Navigator.pop(
                                                             alertDialogContext),
-                                                    child: Text('Ok'),
+                                                    child: const Text('Ok'),
                                                   ),
                                                 ],
                                               );
@@ -331,7 +326,7 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 170.0, 0.0, 0.0),
                         child: Container(
                           width: double.infinity,
@@ -339,7 +334,7 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 6.0,
                                 color: Color(0x1B090F13),
@@ -349,7 +344,7 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                                 ),
                               )
                             ],
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(0.0),
                               bottomRight: Radius.circular(0.0),
                               topLeft: Radius.circular(16.0),
@@ -369,14 +364,14 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Text(
                                             'Archived Tasks',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Feather',
-                                                  color: Color(0xFFFFBD59),
+                                                  color: const Color(0xFFFFBD59),
                                                   fontSize: 34.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.bold,
@@ -386,7 +381,7 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                                       ],
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 40.0, 16.0, 0.0),
                                       child: FutureBuilder<List<TasksRow>>(
                                         future: TasksTable().queryRows(
@@ -435,7 +430,7 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                                                   listViewTasksRowList[
                                                       listViewIndex];
                                               return Padding(
-                                                padding: EdgeInsets.all(4.0),
+                                                padding: const EdgeInsets.all(4.0),
                                                 child: wrapWithModel(
                                                   model: _model
                                                       .archiveTaskDivModels
@@ -472,16 +467,16 @@ class _ArchiveTasksWidgetState extends State<ArchiveTasksWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Stack(
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         10.0, 5.0, 0.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,

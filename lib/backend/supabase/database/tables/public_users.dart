@@ -9,7 +9,7 @@ class PublicUsersTable extends SupabaseTable<PublicUsersRow> {
 }
 
 class PublicUsersRow extends SupabaseDataRow {
-  PublicUsersRow(Map<String, dynamic> data) : super(data);
+  PublicUsersRow(super.data);
 
   @override
   SupabaseTable get table => PublicUsersTable();

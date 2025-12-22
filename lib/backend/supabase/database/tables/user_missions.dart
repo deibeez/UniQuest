@@ -9,7 +9,7 @@ class UserMissionsTable extends SupabaseTable<UserMissionsRow> {
 }
 
 class UserMissionsRow extends SupabaseDataRow {
-  UserMissionsRow(Map<String, dynamic> data) : super(data);
+  UserMissionsRow(super.data);
 
   @override
   SupabaseTable get table => UserMissionsTable();

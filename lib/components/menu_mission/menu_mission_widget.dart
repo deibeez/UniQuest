@@ -2,10 +2,7 @@ import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'menu_mission_model.dart';
 export 'menu_mission_model.dart';
 
@@ -58,7 +55,7 @@ class _MenuMissionWidgetState extends State<MenuMissionWidget> {
       child: Container(
         width: double.infinity,
         height: 515.29,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xFF1E1E1E),
           boxShadow: [
             BoxShadow(
@@ -78,31 +75,31 @@ class _MenuMissionWidgetState extends State<MenuMissionWidget> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(20.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     var confirmDialogResponse = await showDialog<bool>(
                           context: context,
                           builder: (alertDialogContext) {
                             return AlertDialog(
-                              title: Text(
+                              title: const Text(
                                   'Are you certain you want to delete this?'),
-                              content: Text('Confirm'),
+                              content: const Text('Confirm'),
                               actions: [
                                 TextButton(
                                   onPressed: () =>
                                       Navigator.pop(alertDialogContext, false),
-                                  child: Text('Cancel'),
+                                  child: const Text('Cancel'),
                                 ),
                                 TextButton(
                                   onPressed: () =>
                                       Navigator.pop(alertDialogContext, true),
-                                  child: Text('Confirm'),
+                                  child: const Text('Confirm'),
                                 ),
                               ],
                             );
@@ -113,20 +110,20 @@ class _MenuMissionWidgetState extends State<MenuMissionWidget> {
                       await MissionsTable().delete(
                         matchingRows: (rows) => rows.eqOrNull(
                           'mission_id',
-                          widget!.missions?.missionId,
+                          widget.missions?.missionId,
                         ),
                       );
                       await showDialog(
                         context: context,
                         builder: (alertDialogContext) {
                           return AlertDialog(
-                            title: Text('Success!'),
-                            content: Text('The mission has been deleted.'),
+                            title: const Text('Success!'),
+                            content: const Text('The mission has been deleted.'),
                             actions: [
                               TextButton(
                                 onPressed: () =>
                                     Navigator.pop(alertDialogContext),
-                                child: Text('Ok'),
+                                child: const Text('Ok'),
                               ),
                             ],
                           );
@@ -138,13 +135,13 @@ class _MenuMissionWidgetState extends State<MenuMissionWidget> {
                         context: context,
                         builder: (alertDialogContext) {
                           return AlertDialog(
-                            title: Text('Cancelled'),
-                            content: Text('You\'ve cancelled this action.'),
+                            title: const Text('Cancelled'),
+                            content: const Text('You\'ve cancelled this action.'),
                             actions: [
                               TextButton(
                                 onPressed: () =>
                                     Navigator.pop(alertDialogContext),
-                                child: Text('Ok'),
+                                child: const Text('Ok'),
                               ),
                             ],
                           );
@@ -156,19 +153,19 @@ class _MenuMissionWidgetState extends State<MenuMissionWidget> {
                   options: FFButtonOptions(
                     width: double.infinity,
                     height: 60.0,
-                    padding: EdgeInsets.all(14.0),
+                    padding: const EdgeInsets.all(14.0),
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).error,
                     textStyle: FlutterFlowTheme.of(context).bodyLarge.override(
                           fontFamily: 'Feather',
-                          color: Color(0xFF14181B),
+                          color: const Color(0xFF14181B),
                           fontSize: 16.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
                         ),
                     elevation: 2.0,
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Colors.transparent,
                       width: 1.0,
                     ),
@@ -177,7 +174,7 @@ class _MenuMissionWidgetState extends State<MenuMissionWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     await MissionsTable().update(
@@ -186,20 +183,20 @@ class _MenuMissionWidgetState extends State<MenuMissionWidget> {
                       },
                       matchingRows: (rows) => rows.eqOrNull(
                         'mission_id',
-                        widget!.missions?.missionId,
+                        widget.missions?.missionId,
                       ),
                     );
                     await showDialog(
                       context: context,
                       builder: (alertDialogContext) {
                         return AlertDialog(
-                          title: Text('Success!'),
-                          content: Text('Congrats on completing a task.'),
+                          title: const Text('Success!'),
+                          content: const Text('Congrats on completing a task.'),
                           actions: [
                             TextButton(
                               onPressed: () =>
                                   Navigator.pop(alertDialogContext),
-                              child: Text('Ok'),
+                              child: const Text('Ok'),
                             ),
                           ],
                         );
@@ -210,19 +207,19 @@ class _MenuMissionWidgetState extends State<MenuMissionWidget> {
                   options: FFButtonOptions(
                     width: double.infinity,
                     height: 60.0,
-                    padding: EdgeInsets.all(14.0),
+                    padding: const EdgeInsets.all(14.0),
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).accent1,
                     textStyle: FlutterFlowTheme.of(context).bodyLarge.override(
                           fontFamily: 'Feather',
-                          color: Color(0xFF14181B),
+                          color: const Color(0xFF14181B),
                           fontSize: 16.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
                         ),
                     elevation: 2.0,
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Colors.transparent,
                       width: 1.0,
                     ),
@@ -231,7 +228,7 @@ class _MenuMissionWidgetState extends State<MenuMissionWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     context.pop();
@@ -240,9 +237,9 @@ class _MenuMissionWidgetState extends State<MenuMissionWidget> {
                   options: FFButtonOptions(
                     width: double.infinity,
                     height: 60.0,
-                    padding: EdgeInsets.all(14.0),
+                    padding: const EdgeInsets.all(14.0),
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).secondaryText,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Feather',
@@ -252,7 +249,7 @@ class _MenuMissionWidgetState extends State<MenuMissionWidget> {
                           fontWeight: FontWeight.bold,
                         ),
                     elevation: 0.0,
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Colors.transparent,
                       width: 0.0,
                     ),

@@ -2,14 +2,8 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'terms_model.dart';
 export 'terms_model.dart';
 
@@ -51,8 +45,8 @@ class _TermsWidgetState extends State<TermsWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -70,8 +64,8 @@ class _TermsWidgetState extends State<TermsWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -89,8 +83,8 @@ class _TermsWidgetState extends State<TermsWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -108,8 +102,8 @@ class _TermsWidgetState extends State<TermsWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -127,8 +121,8 @@ class _TermsWidgetState extends State<TermsWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -146,8 +140,8 @@ class _TermsWidgetState extends State<TermsWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -165,8 +159,8 @@ class _TermsWidgetState extends State<TermsWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -213,7 +207,7 @@ class _TermsWidgetState extends State<TermsWidget>
               context.pop();
             },
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -225,14 +219,14 @@ class _TermsWidgetState extends State<TermsWidget>
               Expanded(
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 4.0, 0.0, 0.0),
                           child: Text(
                             'Terms & Conditions',
@@ -246,7 +240,7 @@ class _TermsWidgetState extends State<TermsWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 4.0),
                           child: Text(
                             'By using this app, you agree to the following terms.',
@@ -260,11 +254,11 @@ class _TermsWidgetState extends State<TermsWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 500.0,
                             ),
                             decoration: BoxDecoration(
@@ -277,7 +271,7 @@ class _TermsWidgetState extends State<TermsWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -293,7 +287,7 @@ class _TermsWidgetState extends State<TermsWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       'This app is provided to help users manage tasks, track progress, and earn rewards. You agree to use the app responsibly and not attempt to abuse, exploit, or disrupt its systems.',
@@ -313,11 +307,11 @@ class _TermsWidgetState extends State<TermsWidget>
                               animationsMap['containerOnPageLoadAnimation1']!),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 500.0,
                             ),
                             decoration: BoxDecoration(
@@ -330,7 +324,7 @@ class _TermsWidgetState extends State<TermsWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -346,7 +340,7 @@ class _TermsWidgetState extends State<TermsWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       'You are responsible for maintaining the security of your account. Any activity that occurs under your account is your responsibility.',
@@ -366,11 +360,11 @@ class _TermsWidgetState extends State<TermsWidget>
                               animationsMap['containerOnPageLoadAnimation2']!),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 500.0,
                             ),
                             decoration: BoxDecoration(
@@ -383,7 +377,7 @@ class _TermsWidgetState extends State<TermsWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -399,7 +393,7 @@ class _TermsWidgetState extends State<TermsWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       'XP, streaks, missions, and achievements are earned automatically based on in-app actions. Progress may be adjusted or reset in cases of system updates, bug fixes, or misuse.',
@@ -419,11 +413,11 @@ class _TermsWidgetState extends State<TermsWidget>
                               animationsMap['containerOnPageLoadAnimation3']!),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 500.0,
                             ),
                             decoration: BoxDecoration(
@@ -436,7 +430,7 @@ class _TermsWidgetState extends State<TermsWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -452,7 +446,7 @@ class _TermsWidgetState extends State<TermsWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       'Your data is stored securely and used only to provide app functionality. We do not sell your personal information.',
@@ -472,11 +466,11 @@ class _TermsWidgetState extends State<TermsWidget>
                               animationsMap['containerOnPageLoadAnimation4']!),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 500.0,
                             ),
                             decoration: BoxDecoration(
@@ -489,7 +483,7 @@ class _TermsWidgetState extends State<TermsWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -505,7 +499,7 @@ class _TermsWidgetState extends State<TermsWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       'The app is provided “as is.” We are not responsible for data loss, progress resets, or interruptions caused by technical issues.',
@@ -525,11 +519,11 @@ class _TermsWidgetState extends State<TermsWidget>
                               animationsMap['containerOnPageLoadAnimation5']!),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 500.0,
                             ),
                             decoration: BoxDecoration(
@@ -542,7 +536,7 @@ class _TermsWidgetState extends State<TermsWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -558,7 +552,7 @@ class _TermsWidgetState extends State<TermsWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       'Features, rewards, and rules may change over time to improve the experience. Continued use of the app means you accept these changes.',
@@ -578,11 +572,11 @@ class _TermsWidgetState extends State<TermsWidget>
                               animationsMap['containerOnPageLoadAnimation6']!),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 500.0,
                             ),
                             decoration: BoxDecoration(
@@ -595,7 +589,7 @@ class _TermsWidgetState extends State<TermsWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -611,7 +605,7 @@ class _TermsWidgetState extends State<TermsWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       'We reserve the right to suspend or terminate accounts that violate these terms.',

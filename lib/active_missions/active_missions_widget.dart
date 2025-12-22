@@ -5,13 +5,9 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'active_missions_model.dart';
 export 'active_missions_model.dart';
 
@@ -60,8 +56,8 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -80,8 +76,8 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -100,8 +96,8 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
             curve: Curves.easeInOut,
             delay: 400.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 60.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 60.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -134,7 +130,7 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
@@ -142,7 +138,7 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
                   Stack(
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 50.0, 16.0, 0.0),
                         child: FutureBuilder<List<MissionsRow>>(
                           future: MissionsTable().queryRows(
@@ -181,7 +177,7 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 12.0, 16.0, 12.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -195,7 +191,7 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: Text(
                                             'Total Active Missions',
@@ -211,7 +207,7 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 12.0, 0.0, 0.0),
                                           child: Text(
                                             valueOrDefault<String>(
@@ -271,7 +267,7 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
                                                 padding:
                                                     MediaQuery.viewInsetsOf(
                                                         context),
-                                                child: AddMissionWidget(),
+                                                child: const AddMissionWidget(),
                                               ),
                                             );
                                           },
@@ -280,10 +276,10 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
                                       text: 'Create Mission',
                                       options: FFButtonOptions(
                                         height: 48.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             24.0, 0.0, 24.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .tertiary,
@@ -313,12 +309,12 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 170.0, 0.0, 0.0),
                         child: Container(
                           width: double.infinity,
                           height: 600.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 6.0,
@@ -337,15 +333,15 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 8.0, 0.0, 0.0),
                             child: Column(
                               children: [
                                 Align(
-                                  alignment: Alignment(0.0, 0),
+                                  alignment: const Alignment(0.0, 0),
                                   child: TabBar(
                                     isScrollable: true,
-                                    labelColor: Color(0xFFFFBD59),
+                                    labelColor: const Color(0xFFFFBD59),
                                     unselectedLabelColor:
                                         FlutterFlowTheme.of(context)
                                             .secondaryText,
@@ -353,15 +349,15 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Feather',
-                                          color: Color(0xFF0F1113),
+                                          color: const Color(0xFF0F1113),
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
                                         ),
-                                    unselectedLabelStyle: TextStyle(),
-                                    indicatorColor: Color(0xFFFFBD59),
+                                    unselectedLabelStyle: const TextStyle(),
+                                    indicatorColor: const Color(0xFFFFBD59),
                                     indicatorWeight: 2.0,
-                                    tabs: [
+                                    tabs: const [
                                       Tab(
                                         text: ' Missions',
                                       ),
@@ -377,7 +373,7 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
                                     controller: _model.tabBarController,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 12.0, 16.0, 12.0),
                                         child: FutureBuilder<List<MissionsRow>>(
                                           future: MissionsTable().queryRows(
@@ -456,16 +452,16 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Stack(
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         10.0, 5.0, 0.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -484,9 +480,9 @@ class _ActiveMissionsWidgetState extends State<ActiveMissionsWidget>
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           50.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         'Active Missions',

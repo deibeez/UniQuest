@@ -5,13 +5,9 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'add_mission_model.dart';
 export 'add_mission_model.dart';
 
@@ -60,8 +56,8 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
             curve: Curves.bounceOut,
             delay: 300.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -93,7 +89,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
     return Container(
       width: 600.0,
       height: double.infinity,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Color(0x9AFFFFFF),
       ),
       child: Column(
@@ -101,15 +97,15 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 2.0, 16.0, 16.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 2.0, 16.0, 16.0),
             child: Container(
               width: double.infinity,
-              constraints: BoxConstraints(
+              constraints: const BoxConstraints(
                 maxWidth: 670.0,
               ),
               decoration: BoxDecoration(
-                color: Color(0xFF1E1E1E),
-                boxShadow: [
+                color: const Color(0xFF1E1E1E),
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 12.0,
                     color: Color(0x1E000000),
@@ -127,13 +123,13 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(24.0, 16.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(24.0, 16.0, 0.0, 0.0),
                     child: Text(
                       'Create New Mission',
                       style:
                           FlutterFlowTheme.of(context).headlineMedium.override(
                                 fontFamily: 'Feather',
-                                color: Color(0xFFFFBD59),
+                                color: const Color(0xFFFFBD59),
                                 fontSize: 24.0,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.bold,
@@ -142,7 +138,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(24.0, 4.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(24.0, 4.0, 0.0, 0.0),
                     child: Text(
                       'Below are your task details',
                       style: FlutterFlowTheme.of(context).labelMedium.override(
@@ -160,7 +156,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 16.0, 16.0, 0.0),
                         child: TextFormField(
                           controller: _model.nameTextController,
@@ -178,7 +174,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .labelMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF606A85),
+                                  color: const Color(0xFF606A85),
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
@@ -195,7 +191,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .labelMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF606A85),
+                                  color: const Color(0xFF606A85),
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
@@ -204,28 +200,28 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                       .fontStyle,
                                 ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFE5E7EB),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFF6F61EF),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             errorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFFF5963),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFFF5963),
                                 width: 2.0,
                               ),
@@ -233,7 +229,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                             ),
                             filled: true,
                             fillColor: Colors.white,
-                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 24.0, 20.0, 24.0),
                           ),
                           style:
@@ -244,7 +240,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF15161E),
+                                    color: const Color(0xFF15161E),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -252,13 +248,13 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                          cursorColor: Color(0xFF6F61EF),
+                          cursorColor: const Color(0xFF6F61EF),
                           validator: _model.nameTextControllerValidator
                               .asValidator(context),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 16.0, 16.0, 0.0),
                         child: TextFormField(
                           controller: _model.notesTextController,
@@ -276,7 +272,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .labelMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF606A85),
+                                  color: const Color(0xFF606A85),
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
@@ -293,7 +289,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .labelMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF606A85),
+                                  color: const Color(0xFF606A85),
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
@@ -302,28 +298,28 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                       .fontStyle,
                                 ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFE5E7EB),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFF6F61EF),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             errorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFFF5963),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFFF5963),
                                 width: 2.0,
                               ),
@@ -331,7 +327,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                             ),
                             filled: true,
                             fillColor: Colors.white,
-                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 24.0, 20.0, 24.0),
                           ),
                           style:
@@ -342,7 +338,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF15161E),
+                                    color: const Color(0xFF15161E),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -350,13 +346,13 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                          cursorColor: Color(0xFF6F61EF),
+                          cursorColor: const Color(0xFF6F61EF),
                           validator: _model.notesTextControllerValidator
                               .asValidator(context),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 16.0, 16.0, 0.0),
                         child: TextFormField(
                           controller: _model.xpTextController,
@@ -374,7 +370,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .labelMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF606A85),
+                                  color: const Color(0xFF606A85),
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
@@ -391,7 +387,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .labelMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF606A85),
+                                  color: const Color(0xFF606A85),
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
@@ -400,28 +396,28 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                       .fontStyle,
                                 ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFE5E7EB),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFF6F61EF),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             errorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFFF5963),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFFF5963),
                                 width: 2.0,
                               ),
@@ -429,7 +425,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                             ),
                             filled: true,
                             fillColor: Colors.white,
-                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 24.0, 20.0, 24.0),
                           ),
                           style:
@@ -440,7 +436,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF15161E),
+                                    color: const Color(0xFF15161E),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -448,13 +444,13 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                          cursorColor: Color(0xFF6F61EF),
+                          cursorColor: const Color(0xFF6F61EF),
                           validator: _model.xpTextControllerValidator
                               .asValidator(context),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 16.0, 16.0, 0.0),
                         child: TextFormField(
                           controller: _model.targetValueTextController,
@@ -473,7 +469,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .labelMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF606A85),
+                                  color: const Color(0xFF606A85),
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
@@ -490,7 +486,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .labelMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF606A85),
+                                  color: const Color(0xFF606A85),
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
@@ -499,28 +495,28 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                       .fontStyle,
                                 ),
                             enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFE5E7EB),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFF6F61EF),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             errorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFFF5963),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFFF5963),
                                 width: 2.0,
                               ),
@@ -528,7 +524,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                             ),
                             filled: true,
                             fillColor: Colors.white,
-                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 24.0, 20.0, 24.0),
                           ),
                           style:
@@ -539,7 +535,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF15161E),
+                                    color: const Color(0xFF15161E),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -547,20 +543,20 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                          cursorColor: Color(0xFF6F61EF),
+                          cursorColor: const Color(0xFF6F61EF),
                           validator: _model.targetValueTextControllerValidator
                               .asValidator(context),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 16.0, 0.0),
                           child: FlutterFlowDropDown<String>(
                             controller: _model.triggerValueController ??=
                                 FormFieldController<String>(null),
-                            options: ['task_count', 'first_task', 'streak'],
+                            options: const ['task_count', 'first_task', 'streak'],
                             onChanged: (val) =>
                                 safeSetState(() => _model.triggerValue = val),
                             width: 538.7,
@@ -574,7 +570,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF606A85),
+                                  color: const Color(0xFF606A85),
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
                                   fontStyle: FlutterFlowTheme.of(context)
@@ -592,7 +588,7 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                             borderColor: Colors.transparent,
                             borderWidth: 0.0,
                             borderRadius: 8.0,
-                            margin: EdgeInsetsDirectional.fromSTEB(
+                            margin: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 12.0, 0.0),
                             hidesUnderline: true,
                             isOverButton: false,
@@ -605,13 +601,13 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 24.0),
+                        const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 24.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.05),
+                          alignment: const AlignmentDirectional(0.0, 0.05),
                           child: FFButtonWidget(
                             onPressed: () async {
                               Navigator.pop(context);
@@ -619,38 +615,38 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                             text: 'Cancel',
                             options: FFButtonOptions(
                               height: 44.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: Colors.white,
                               textStyle: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Feather',
-                                    color: Color(0xFF15161E),
+                                    color: const Color(0xFF15161E),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
                                   ),
                               elevation: 0.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFFE5E7EB),
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
-                              hoverColor: Color(0xFFE5E7EB),
-                              hoverBorderSide: BorderSide(
+                              hoverColor: const Color(0xFFE5E7EB),
+                              hoverBorderSide: const BorderSide(
                                 color: Color(0xFFE5E7EB),
                                 width: 2.0,
                               ),
-                              hoverTextColor: Color(0xFF15161E),
+                              hoverTextColor: const Color(0xFF15161E),
                               hoverElevation: 3.0,
                             ),
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.05),
+                          alignment: const AlignmentDirectional(0.0, 0.05),
                           child: FFButtonWidget(
                             onPressed: () async {
                               await MissionsTable().insert({
@@ -666,13 +662,13 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                 context: context,
                                 builder: (alertDialogContext) {
                                   return AlertDialog(
-                                    title: Text('Success!'),
-                                    content: Text('Mission has been Created.'),
+                                    title: const Text('Success!'),
+                                    content: const Text('Mission has been Created.'),
                                     actions: [
                                       TextButton(
                                         onPressed: () =>
                                             Navigator.pop(alertDialogContext),
-                                        child: Text('Ok'),
+                                        child: const Text('Ok'),
                                       ),
                                     ],
                                   );
@@ -683,11 +679,11 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                             text: 'Save',
                             options: FFButtonOptions(
                               height: 44.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: Color(0xFFFFBD59),
+                              color: const Color(0xFFFFBD59),
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
@@ -698,17 +694,17 @@ class _AddMissionWidgetState extends State<AddMissionWidget>
                                     fontWeight: FontWeight.bold,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
-                              hoverColor: Color(0x4D9489F5),
-                              hoverBorderSide: BorderSide(
+                              hoverColor: const Color(0x4D9489F5),
+                              hoverBorderSide: const BorderSide(
                                 color: Color(0xFF6F61EF),
                                 width: 1.0,
                               ),
-                              hoverTextColor: Color(0xFF15161E),
+                              hoverTextColor: const Color(0xFF15161E),
                               hoverElevation: 0.0,
                             ),
                           ),

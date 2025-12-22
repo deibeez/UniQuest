@@ -9,7 +9,7 @@ class UserRankViewTable extends SupabaseTable<UserRankViewRow> {
 }
 
 class UserRankViewRow extends SupabaseDataRow {
-  UserRankViewRow(Map<String, dynamic> data) : super(data);
+  UserRankViewRow(super.data);
 
   @override
   SupabaseTable get table => UserRankViewTable();

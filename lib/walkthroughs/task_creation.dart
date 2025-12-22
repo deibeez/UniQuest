@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
 import '/components/walkthrough_bubble/walkthrough_bubble_widget.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/flutter_flow_util.dart';
 
 // Focus widget keys for this walkthrough
 final columnJlvb4ic6 = GlobalKey();
@@ -25,11 +23,11 @@ List<TargetFocus> createWalkthroughTargets(BuildContext context) => [
         enableOverlayTab: true,
         alignSkip: Alignment.bottomRight,
         shape: ShapeLightFocus.RRect,
-        color: Color(0x0AFFFFFF),
+        color: const Color(0x0AFFFFFF),
         contents: [
           TargetContent(
             align: ContentAlign.bottom,
-            builder: (context, __) => WalkthroughBubbleWidget(
+            builder: (context, __) => const WalkthroughBubbleWidget(
               text:
                   'This is the task creation page in where you can input your data about the task you are going to create',
             ),
@@ -43,11 +41,11 @@ List<TargetFocus> createWalkthroughTargets(BuildContext context) => [
         enableOverlayTab: true,
         alignSkip: Alignment.bottomRight,
         shape: ShapeLightFocus.RRect,
-        color: Color(0x0AFFFFFF),
+        color: const Color(0x0AFFFFFF),
         contents: [
           TargetContent(
             align: ContentAlign.bottom,
-            builder: (context, __) => WalkthroughBubbleWidget(
+            builder: (context, __) => const WalkthroughBubbleWidget(
               text: 'In this column you can write your task name',
             ),
           ),
@@ -60,11 +58,11 @@ List<TargetFocus> createWalkthroughTargets(BuildContext context) => [
         enableOverlayTab: true,
         alignSkip: Alignment.bottomRight,
         shape: ShapeLightFocus.RRect,
-        color: Color(0x0AFFFFFF),
+        color: const Color(0x0AFFFFFF),
         contents: [
           TargetContent(
             align: ContentAlign.bottom,
-            builder: (context, __) => WalkthroughBubbleWidget(
+            builder: (context, __) => const WalkthroughBubbleWidget(
               text: 'Right here you can input the tags',
             ),
           ),
@@ -77,11 +75,11 @@ List<TargetFocus> createWalkthroughTargets(BuildContext context) => [
         enableOverlayTab: true,
         alignSkip: Alignment.bottomRight,
         shape: ShapeLightFocus.RRect,
-        color: Color(0x0AFFFFFF),
+        color: const Color(0x0AFFFFFF),
         contents: [
           TargetContent(
             align: ContentAlign.bottom,
-            builder: (context, __) => WalkthroughBubbleWidget(
+            builder: (context, __) => const WalkthroughBubbleWidget(
               text: 'In this column you can set your task priority',
             ),
           ),
@@ -94,11 +92,11 @@ List<TargetFocus> createWalkthroughTargets(BuildContext context) => [
         enableOverlayTab: true,
         alignSkip: Alignment.bottomRight,
         shape: ShapeLightFocus.RRect,
-        color: Color(0x0AFFFFFF),
+        color: const Color(0x0AFFFFFF),
         contents: [
           TargetContent(
             align: ContentAlign.bottom,
-            builder: (context, __) => WalkthroughBubbleWidget(
+            builder: (context, __) => const WalkthroughBubbleWidget(
               text: 'Here you can add your notes',
             ),
           ),
@@ -111,11 +109,11 @@ List<TargetFocus> createWalkthroughTargets(BuildContext context) => [
         enableOverlayTab: true,
         alignSkip: Alignment.bottomRight,
         shape: ShapeLightFocus.RRect,
-        color: Color(0x0AFFFFFF),
+        color: const Color(0x0AFFFFFF),
         contents: [
           TargetContent(
             align: ContentAlign.bottom,
-            builder: (context, __) => WalkthroughBubbleWidget(
+            builder: (context, __) => const WalkthroughBubbleWidget(
               text: 'Cancel button to remove the task data',
             ),
           ),
@@ -128,11 +126,11 @@ List<TargetFocus> createWalkthroughTargets(BuildContext context) => [
         enableOverlayTab: true,
         alignSkip: Alignment.bottomRight,
         shape: ShapeLightFocus.RRect,
-        color: Color(0x0AFFFFFF),
+        color: const Color(0x0AFFFFFF),
         contents: [
           TargetContent(
             align: ContentAlign.bottom,
-            builder: (context, __) => WalkthroughBubbleWidget(
+            builder: (context, __) => const WalkthroughBubbleWidget(
               text:
                   'Save task button to save your task and make it appear on the to do list page',
             ),
@@ -150,7 +148,7 @@ List<TargetFocus> createWalkthroughTargets(BuildContext context) => [
         contents: [
           TargetContent(
             align: ContentAlign.top,
-            builder: (context, __) => WalkthroughBubbleWidget(
+            builder: (context, __) => const WalkthroughBubbleWidget(
               text: 'That is all now get started and HAPPY QUESTING!!!',
             ),
           ),

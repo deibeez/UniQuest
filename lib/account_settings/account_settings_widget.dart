@@ -4,12 +4,10 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'account_settings_model.dart';
 export 'account_settings_model.dart';
 
@@ -57,7 +55,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
       appBar: AppBar(
-        backgroundColor: Color(0xFFFFBD59),
+        backgroundColor: const Color(0xFFFFBD59),
         automaticallyImplyLeading: false,
         leading: FlutterFlowIconButton(
           borderColor: Colors.transparent,
@@ -72,7 +70,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
             context.safePop();
           },
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 0.0,
       ),
@@ -89,17 +87,17 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                   Expanded(
                     child: Container(
                       width: double.infinity,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xFFFFBD59),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 24.0, 16.0, 24.0),
                         child: Container(
                           width: MediaQuery.sizeOf(context).width * 0.9,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context).accent4,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 8.0,
                                 color: Color(0x36000000),
@@ -112,7 +110,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(12.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -121,13 +119,13 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                                   children: [
                                     Card(
                                       clipBehavior: Clip.antiAliasWithSaveLayer,
-                                      color: Color(0xFFFFBD59),
+                                      color: const Color(0xFFFFBD59),
                                       shape: RoundedRectangleBorder(
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(8.0),
+                                        padding: const EdgeInsets.all(8.0),
                                         child: FaIcon(
                                           FontAwesomeIcons.userEdit,
                                           color:
@@ -138,7 +136,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                                     ),
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8.0, 0.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -146,7 +144,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(8.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Edit Your Account Info',
@@ -177,7 +175,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                 ],
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 16.0),
                 child: FutureBuilder<List<ProfilesRow>>(
                   future: ProfilesTable().querySingleRow(
                     queryFn: (q) => q.eqOrNull(
@@ -214,7 +212,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 15.0, 0.0, 0.0),
                               child: Text(
                                 'Change Profile Details',
@@ -235,7 +233,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 0.0),
                                 child: TextFormField(
                                   controller: _model.textController1 ??=
@@ -341,7 +339,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFFDBE2E7),
+                                        color: const Color(0xFFDBE2E7),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -362,7 +360,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 0.0),
                                 child: TextFormField(
                                   controller: _model.textController2 ??=
@@ -468,7 +466,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFFDBE2E7),
+                                        color: const Color(0xFFDBE2E7),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -485,9 +483,9 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                           ],
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 15.0, 0.0, 5.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -509,14 +507,14 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                                       context: context,
                                       builder: (alertDialogContext) {
                                         return AlertDialog(
-                                          title: Text('Success!'),
-                                          content: Text(
+                                          title: const Text('Success!'),
+                                          content: const Text(
                                               'Your details have been updated.'),
                                           actions: [
                                             TextButton(
                                               onPressed: () => Navigator.pop(
                                                   alertDialogContext),
-                                              child: Text('Ok'),
+                                              child: const Text('Ok'),
                                             ),
                                           ],
                                         );
@@ -527,21 +525,21 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                                   options: FFButtonOptions(
                                     width: 200.0,
                                     height: 40.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color: FlutterFlowTheme.of(context).accent4,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
                                           fontFamily: 'Feather',
-                                          color: Color(0xFFFFBD59),
+                                          color: const Color(0xFFFFBD59),
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0xFFFFBD59),
                                     ),
                                     borderRadius: BorderRadius.circular(8.0),
@@ -552,7 +550,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 10.0, 0.0, 5.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -576,7 +574,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 0.0),
                                 child: TextFormField(
                                   controller: _model.textController3,
@@ -679,7 +677,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFFDBE2E7),
+                                        color: const Color(0xFFDBE2E7),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -701,7 +699,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 0.0),
                                 child: TextFormField(
                                   controller: _model.textController4,
@@ -804,7 +802,7 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFFDBE2E7),
+                                        color: const Color(0xFFDBE2E7),
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -840,18 +838,18 @@ class _AccountSettingsWidgetState extends State<AccountSettingsWidget> {
                 options: FFButtonOptions(
                   width: 200.0,
                   height: 50.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).accent4,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Feather',
-                        color: Color(0xFFFFBD59),
+                        color: const Color(0xFFFFBD59),
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.bold,
                       ),
                   elevation: 3.0,
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Color(0xFFFFBD59),
                     width: 1.0,
                   ),

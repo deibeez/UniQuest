@@ -2,14 +2,8 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'support_model.dart';
 export 'support_model.dart';
 
@@ -51,8 +45,8 @@ class _SupportWidgetState extends State<SupportWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -70,8 +64,8 @@ class _SupportWidgetState extends State<SupportWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -89,8 +83,8 @@ class _SupportWidgetState extends State<SupportWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -108,8 +102,8 @@ class _SupportWidgetState extends State<SupportWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -127,8 +121,8 @@ class _SupportWidgetState extends State<SupportWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -146,8 +140,8 @@ class _SupportWidgetState extends State<SupportWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 110.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 110.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -194,7 +188,7 @@ class _SupportWidgetState extends State<SupportWidget>
               context.pop();
             },
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -206,7 +200,7 @@ class _SupportWidgetState extends State<SupportWidget>
               Expanded(
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -222,7 +216,7 @@ class _SupportWidgetState extends State<SupportWidget>
                                   ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 4.0, 0.0, 0.0),
                           child: Text(
                             'How can we help you?',
@@ -240,11 +234,11 @@ class _SupportWidgetState extends State<SupportWidget>
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 0.0),
                                 child: Container(
                                   width: 120.0,
-                                  constraints: BoxConstraints(
+                                  constraints: const BoxConstraints(
                                     maxWidth: 500.0,
                                   ),
                                   decoration: BoxDecoration(
@@ -258,11 +252,11 @@ class _SupportWidgetState extends State<SupportWidget>
                                     ),
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Stack(
                                       children: [
                                         Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -270,13 +264,13 @@ class _SupportWidgetState extends State<SupportWidget>
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.center,
                                             children: [
-                                              Icon(
+                                              const Icon(
                                                 Icons.email_outlined,
                                                 color: Color(0xFFFFBD59),
                                                 size: 36.0,
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 12.0, 0.0, 0.0),
                                                 child: Text(
@@ -303,10 +297,10 @@ class _SupportWidgetState extends State<SupportWidget>
                                     'containerOnPageLoadAnimation1']!),
                               ),
                             ),
-                          ].divide(SizedBox(width: 12.0)),
+                          ].divide(const SizedBox(width: 12.0)),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 4.0),
                           child: Text(
                             'Review FAQ\'s below',
@@ -320,11 +314,11 @@ class _SupportWidgetState extends State<SupportWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 500.0,
                             ),
                             decoration: BoxDecoration(
@@ -337,7 +331,7 @@ class _SupportWidgetState extends State<SupportWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -353,7 +347,7 @@ class _SupportWidgetState extends State<SupportWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       '- Create tasks to organize what you need to do.\n\n- Mark tasks as done to earn XP and build your daily streak.\n\n- Completing at least one task per day increases your task streak.',
@@ -373,11 +367,11 @@ class _SupportWidgetState extends State<SupportWidget>
                               animationsMap['containerOnPageLoadAnimation2']!),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 500.0,
                             ),
                             decoration: BoxDecoration(
@@ -390,7 +384,7 @@ class _SupportWidgetState extends State<SupportWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -406,7 +400,7 @@ class _SupportWidgetState extends State<SupportWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       '- Login Streak: Increases when you open the app once per day.\n\n- Task Streak: Increases when you complete at least one task in a day.\n\n- Missing a day may reset your streak.',
@@ -426,11 +420,11 @@ class _SupportWidgetState extends State<SupportWidget>
                               animationsMap['containerOnPageLoadAnimation3']!),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 500.0,
                             ),
                             decoration: BoxDecoration(
@@ -443,7 +437,7 @@ class _SupportWidgetState extends State<SupportWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -459,7 +453,7 @@ class _SupportWidgetState extends State<SupportWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       '- Users are ranked based on total XP.\n\n- Higher XP means a higher rank.\n\n- Leaderboards update automatically.',
@@ -479,11 +473,11 @@ class _SupportWidgetState extends State<SupportWidget>
                               animationsMap['containerOnPageLoadAnimation4']!),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 500.0,
                             ),
                             decoration: BoxDecoration(
@@ -496,7 +490,7 @@ class _SupportWidgetState extends State<SupportWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -512,7 +506,7 @@ class _SupportWidgetState extends State<SupportWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       '- Missions are system-generated and tracked automatically.\n\n- You don’t need to manually claim or mark missions as complete.\n\n- Rewards are granted once mission conditions are met.',
@@ -532,11 +526,11 @@ class _SupportWidgetState extends State<SupportWidget>
                               animationsMap['containerOnPageLoadAnimation5']!),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 500.0,
                             ),
                             decoration: BoxDecoration(
@@ -549,7 +543,7 @@ class _SupportWidgetState extends State<SupportWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -565,7 +559,7 @@ class _SupportWidgetState extends State<SupportWidget>
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       'You can update your profile details and change your password in settings. All progress is saved automatically.',

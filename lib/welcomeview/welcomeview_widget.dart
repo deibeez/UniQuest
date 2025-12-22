@@ -1,11 +1,9 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'welcomeview_model.dart';
 export 'welcomeview_model.dart';
 
@@ -60,7 +58,7 @@ class _WelcomeviewWidgetState extends State<WelcomeviewWidget> {
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                 ),
                 child: Padding(
-                  padding: EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(10.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -75,9 +73,9 @@ class _WelcomeviewWidgetState extends State<WelcomeviewWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsets.all(10.0),
+                          padding: const EdgeInsets.all(10.0),
                           child: Text(
                             'Hello Welcome to our onboarding walthrough on how to create a task using our app UNI-QUEST.\n\nThis walkthrough will help you navigate and understand the concept of task creation in this app.\n\nHAPPY QUESTING!',
                             textAlign: TextAlign.center,
@@ -95,13 +93,13 @@ class _WelcomeviewWidgetState extends State<WelcomeviewWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 0.9),
+                alignment: const AlignmentDirectional(0.0, 0.9),
                 child: FFButtonWidget(
                   onPressed: () async {
                     context.goNamed(
                       HomeCopyWidget.routeName,
                       extra: <String, dynamic>{
-                        kTransitionInfoKey: TransitionInfo(
+                        kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
                           transitionType: PageTransitionType.fade,
                         ),
@@ -112,10 +110,10 @@ class _WelcomeviewWidgetState extends State<WelcomeviewWidget> {
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: Color(0xFF1A9C0E),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: const Color(0xFF1A9C0E),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           font: GoogleFonts.manrope(
                             fontWeight: FlutterFlowTheme.of(context)

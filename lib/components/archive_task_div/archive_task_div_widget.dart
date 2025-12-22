@@ -1,11 +1,7 @@
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'archive_task_div_model.dart';
 export 'archive_task_div_model.dart';
 
@@ -20,9 +16,9 @@ class ArchiveTaskDivWidget extends StatefulWidget {
     this.tasks,
     this.id,
     this.isDone,
-  })  : this.title = title ?? '\"\"',
-        this.description = description ?? '\"\"',
-        this.priority = priority ?? '\"Low\"';
+  })  : title = title ?? '\"\"',
+        description = description ?? '\"\"',
+        priority = priority ?? '\"Low\"';
 
   final String title;
   final String description;
@@ -71,7 +67,7 @@ class _ArchiveTaskDivWidgetState extends State<ArchiveTaskDivWidget> {
         Container(
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).secondaryBackground,
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               bottomLeft: Radius.circular(0.0),
               bottomRight: Radius.circular(0.0),
               topLeft: Radius.circular(0.0),
@@ -79,20 +75,20 @@ class _ArchiveTaskDivWidgetState extends State<ArchiveTaskDivWidget> {
             ),
           ),
           child: Padding(
-            padding: EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(12.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
-                Container(
+                SizedBox(
                   width: double.infinity,
                   height: 139.9,
                   child: Stack(
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(-0.79, -0.9),
+                        alignment: const AlignmentDirectional(-0.79, -0.9),
                         child: Text(
                           valueOrDefault<String>(
-                            widget!.title,
+                            widget.title,
                             'title',
                           ),
                           style: FlutterFlowTheme.of(context)
@@ -107,13 +103,13 @@ class _ArchiveTaskDivWidgetState extends State<ArchiveTaskDivWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.94, -0.45),
+                        alignment: const AlignmentDirectional(-0.94, -0.45),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               30.0, 0.0, 0.0, 0.0),
                           child: Text(
                             valueOrDefault<String>(
-                              widget!.description,
+                              widget.description,
                               'details',
                             ),
                             style: FlutterFlowTheme.of(context)
@@ -130,10 +126,10 @@ class _ArchiveTaskDivWidgetState extends State<ArchiveTaskDivWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.83, -0.06),
+                        alignment: const AlignmentDirectional(-0.83, -0.06),
                         child: Text(
                           valueOrDefault<String>(
-                            widget!.tag,
+                            widget.tag,
                             '[]',
                           ),
                           style: FlutterFlowTheme.of(context)

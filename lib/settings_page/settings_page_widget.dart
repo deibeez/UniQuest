@@ -4,11 +4,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'settings_page_model.dart';
 export 'settings_page_model.dart';
 
@@ -44,19 +41,19 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: Color(0xFF1E1E1E),
+      backgroundColor: const Color(0xFF1E1E1E),
       appBar: AppBar(
-        backgroundColor: Color(0xFF1E1E1E),
+        backgroundColor: const Color(0xFF1E1E1E),
         automaticallyImplyLeading: false,
-        actions: [],
+        actions: const [],
         flexibleSpace: FlexibleSpaceBar(
           title: Padding(
-            padding: EdgeInsets.all(6.0),
+            padding: const EdgeInsets.all(6.0),
             child: Text(
               'Settings ',
               style: FlutterFlowTheme.of(context).headlineSmall.override(
                     fontFamily: 'Feather',
-                    color: Color(0xFFFFBD59),
+                    color: const Color(0xFFFFBD59),
                     fontSize: 34.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.bold,
@@ -65,12 +62,12 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
           ),
           centerTitle: false,
           expandedTitleScale: 1.0,
-          titlePadding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+          titlePadding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
         ),
         elevation: 0.0,
       ),
       body: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -84,7 +81,7 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 0.0, 0.0),
               child: Text(
                 'Please evaluate your options below.',
                 style: FlutterFlowTheme.of(context).labelMedium.override(
@@ -100,7 +97,7 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
               scrollDirection: Axis.vertical,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -111,9 +108,9 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
                     },
                     child: Container(
                       width: double.infinity,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -140,7 +137,7 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -151,9 +148,9 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
                     },
                     child: Container(
                       width: double.infinity,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -180,7 +177,7 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -191,9 +188,9 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
                     },
                     child: Container(
                       width: double.infinity,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -226,7 +223,7 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                   child: Text(
                     'App Versions',
                     style: FlutterFlowTheme.of(context).titleLarge.override(
@@ -237,7 +234,7 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                   child: FutureBuilder<List<ProfilesRow>>(
                     future: ProfilesTable().querySingleRow(
                       queryFn: (q) => q.eqOrNull(
@@ -270,7 +267,7 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
                         borderColor: FlutterFlowTheme.of(context).primaryText,
                         borderRadius: 8.0,
                         buttonSize: 40.0,
-                        fillColor: Color(0xFF1E1E1E),
+                        fillColor: const Color(0xFF1E1E1E),
                         icon: Icon(
                           Icons.admin_panel_settings_rounded,
                           color: FlutterFlowTheme.of(context).info,
@@ -284,14 +281,14 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
                               context: context,
                               builder: (alertDialogContext) {
                                 return AlertDialog(
-                                  title: Text('RESTRICTED!'),
-                                  content: Text(
+                                  title: const Text('RESTRICTED!'),
+                                  content: const Text(
                                       'This function is not meant for users.'),
                                   actions: [
                                     TextButton(
                                       onPressed: () =>
                                           Navigator.pop(alertDialogContext),
-                                      child: Text('Ok'),
+                                      child: const Text('Ok'),
                                     ),
                                   ],
                                 );
@@ -306,7 +303,7 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
               ],
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 0.0, 0.0),
               child: Text(
                 'v0.0.1',
                 style: FlutterFlowTheme.of(context).labelMedium.override(
@@ -317,7 +314,7 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 0.0),
               child: FFButtonWidget(
                 onPressed: () async {
                   GoRouter.of(context).prepareAuthEvent();
@@ -329,10 +326,10 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
                 text: 'Log Out',
                 options: FFButtonOptions(
                   height: 50.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                   iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                  color: Color(0xFF1E1E1E),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  color: const Color(0xFF1E1E1E),
                   textStyle: FlutterFlowTheme.of(context).labelMedium.override(
                         fontFamily: 'Feather',
                         color: FlutterFlowTheme.of(context).primaryText,
@@ -348,7 +345,7 @@ class _SettingsPageWidgetState extends State<SettingsPageWidget> {
                 ),
               ),
             ),
-          ].addToEnd(SizedBox(height: 64.0)),
+          ].addToEnd(const SizedBox(height: 64.0)),
         ),
       ),
     );

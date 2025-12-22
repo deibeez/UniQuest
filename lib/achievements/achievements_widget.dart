@@ -3,13 +3,9 @@ import '/backend/supabase/supabase.dart';
 import '/components/achievements_div/achievements_div_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'achievements_model.dart';
 export 'achievements_model.dart';
 
@@ -70,18 +66,18 @@ class _AchievementsWidgetState extends State<AchievementsWidget>
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
                     child: Stack(
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
                             'Achievements',
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Feather',
-                                  color: Color(0xFFFFBD59),
+                                  color: const Color(0xFFFFBD59),
                                   fontSize: 32.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
@@ -89,9 +85,9 @@ class _AchievementsWidgetState extends State<AchievementsWidget>
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 15.0, 0.0, 0.0, 0.0),
                             child: InkWell(
                               splashColor: Colors.transparent,
@@ -116,11 +112,11 @@ class _AchievementsWidgetState extends State<AchievementsWidget>
               ],
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 0.0),
               child: Column(
                 children: [
                   Align(
-                    alignment: Alignment(0.0, 0),
+                    alignment: const Alignment(0.0, 0),
                     child: TabBar(
                       labelColor: FlutterFlowTheme.of(context).primaryText,
                       unselectedLabelColor:
@@ -149,8 +145,8 @@ class _AchievementsWidgetState extends State<AchievementsWidget>
                                     .titleMedium
                                     .fontStyle,
                               ),
-                      indicatorColor: Color(0xFFFFBD59),
-                      tabs: [
+                      indicatorColor: const Color(0xFFFFBD59),
+                      tabs: const [
                         Tab(
                           text: 'All',
                         ),
@@ -169,16 +165,16 @@ class _AchievementsWidgetState extends State<AchievementsWidget>
                       controller: _model.tabBarController,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.7),
+                          alignment: const AlignmentDirectional(0.0, 0.7),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 10.0, 10.0, 190.0),
                             child: Container(
                               height: 579.4,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
-                                boxShadow: [
+                                boxShadow: const [
                                   BoxShadow(
                                     blurRadius: 10.0,
                                     color: Color(0x33000000),
@@ -192,7 +188,7 @@ class _AchievementsWidgetState extends State<AchievementsWidget>
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(5.0),
+                                padding: const EdgeInsets.all(5.0),
                                 child: FutureBuilder<List<UserAchievementsRow>>(
                                   future: UserAchievementsTable().queryRows(
                                     queryFn: (q) => q.eqOrNull(
@@ -257,16 +253,16 @@ class _AchievementsWidgetState extends State<AchievementsWidget>
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.7),
+                          alignment: const AlignmentDirectional(0.0, 0.7),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 10.0, 10.0, 190.0),
                             child: Container(
                               height: 579.4,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
-                                boxShadow: [
+                                boxShadow: const [
                                   BoxShadow(
                                     blurRadius: 10.0,
                                     color: Color(0x33000000),
@@ -280,7 +276,7 @@ class _AchievementsWidgetState extends State<AchievementsWidget>
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(5.0),
+                                padding: const EdgeInsets.all(5.0),
                                 child: FutureBuilder<List<UserAchievementsRow>>(
                                   future: UserAchievementsTable().queryRows(
                                     queryFn: (q) => q

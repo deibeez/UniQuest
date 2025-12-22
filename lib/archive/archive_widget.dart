@@ -3,14 +3,9 @@ import '/components/mission_div/mission_div_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'archive_model.dart';
 export 'archive_model.dart';
 
@@ -59,8 +54,8 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -79,8 +74,8 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -113,7 +108,7 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
@@ -121,7 +116,7 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
                   Stack(
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 50.0, 16.0, 0.0),
                         child: FutureBuilder<List<MissionsRow>>(
                           future: MissionsTable().queryRows(
@@ -160,7 +155,7 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 12.0, 16.0, 12.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -174,7 +169,7 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: Text(
                                             'Total Archived Missions',
@@ -190,7 +185,7 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 12.0, 0.0, 0.0),
                                           child: Text(
                                             valueOrDefault<String>(
@@ -238,7 +233,7 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 170.0, 0.0, 0.0),
                         child: Container(
                           width: double.infinity,
@@ -246,7 +241,7 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 6.0,
                                 color: Color(0x1B090F13),
@@ -256,7 +251,7 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
                                 ),
                               )
                             ],
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(0.0),
                               bottomRight: Radius.circular(0.0),
                               topLeft: Radius.circular(16.0),
@@ -264,15 +259,15 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 8.0, 0.0, 0.0),
                             child: Column(
                               children: [
                                 Align(
-                                  alignment: Alignment(0.0, 0),
+                                  alignment: const Alignment(0.0, 0),
                                   child: TabBar(
                                     isScrollable: true,
-                                    labelColor: Color(0xFFFFBD59),
+                                    labelColor: const Color(0xFFFFBD59),
                                     unselectedLabelColor:
                                         FlutterFlowTheme.of(context)
                                             .secondaryText,
@@ -280,15 +275,15 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Feather',
-                                          color: Color(0xFF0F1113),
+                                          color: const Color(0xFF0F1113),
                                           fontSize: 20.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
                                         ),
-                                    unselectedLabelStyle: TextStyle(),
-                                    indicatorColor: Color(0xFFFFBD59),
+                                    unselectedLabelStyle: const TextStyle(),
+                                    indicatorColor: const Color(0xFFFFBD59),
                                     indicatorWeight: 2.0,
-                                    tabs: [
+                                    tabs: const [
                                       Tab(
                                         text: ' Missions',
                                       ),
@@ -304,7 +299,7 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
                                     controller: _model.tabBarController,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 12.0, 16.0, 12.0),
                                         child: FutureBuilder<List<MissionsRow>>(
                                           future: MissionsTable().queryRows(
@@ -378,16 +373,16 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Stack(
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         10.0, 5.0, 0.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -406,9 +401,9 @@ class _ArchiveWidgetState extends State<ArchiveWidget>
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           50.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         'Archive',

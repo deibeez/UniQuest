@@ -3,15 +3,9 @@ import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'leader_div_model.dart';
 export 'leader_div_model.dart';
 
@@ -67,8 +61,8 @@ class _LeaderDivWidgetState extends State<LeaderDivWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 30.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -91,7 +85,7 @@ class _LeaderDivWidgetState extends State<LeaderDivWidget>
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
       child: InkWell(
         splashColor: Colors.transparent,
         focusColor: Colors.transparent,
@@ -102,7 +96,7 @@ class _LeaderDivWidgetState extends State<LeaderDivWidget>
             ViewProfileWidget.routeName,
             queryParameters: {
               'profileId': serializeParam(
-                widget!.id,
+                widget.id,
                 ParamType.String,
               ),
             }.withoutNulls,
@@ -115,7 +109,7 @@ class _LeaderDivWidgetState extends State<LeaderDivWidget>
             boxShadow: [
               BoxShadow(
                 color: FlutterFlowTheme.of(context).primaryText,
-                offset: Offset(
+                offset: const Offset(
                   0.0,
                   1.0,
                 ),
@@ -128,14 +122,14 @@ class _LeaderDivWidgetState extends State<LeaderDivWidget>
             ),
           ),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
                 Stack(
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: FutureBuilder<List<ProfilesRow>>(
                         future: ProfilesTable().querySingleRow(
                           queryFn: (q) => q.eqOrNull(
@@ -173,31 +167,31 @@ class _LeaderDivWidgetState extends State<LeaderDivWidget>
                               color: FlutterFlowTheme.of(context).accent4,
                               shape: BoxShape.circle,
                             ),
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: 70.0,
                                     height: 70.0,
                                     clipBehavior: Clip.antiAlias,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
                                     child: Image.network(
-                                      widget!.profile!,
+                                      widget.profile!,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: 100.0,
                                     height: 100.0,
                                     clipBehavior: Clip.antiAlias,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
                                     child: Image.network(
@@ -217,24 +211,24 @@ class _LeaderDivWidgetState extends State<LeaderDivWidget>
                 ),
                 Expanded(
                   child: Padding(
-                    padding: EdgeInsets.all(12.0),
+                    padding: const EdgeInsets.all(12.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               5.0, 0.0, 0.0, 0.0),
                           child: Text(
                             valueOrDefault<String>(
-                              widget!.username,
+                              widget.username,
                               'name',
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .headlineSmall
                                 .override(
                                   fontFamily: 'Feather',
-                                  color: Color(0xFFFFBD59),
+                                  color: const Color(0xFFFFBD59),
                                   fontSize: 28.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
@@ -242,13 +236,13 @@ class _LeaderDivWidgetState extends State<LeaderDivWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 4.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     5.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   'XP ',
@@ -262,11 +256,11 @@ class _LeaderDivWidgetState extends State<LeaderDivWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     5.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   formatNumber(
-                                    widget!.xp,
+                                    widget.xp,
                                     formatType: FormatType.compactLong,
                                   ),
                                   style: FlutterFlowTheme.of(context)
@@ -288,15 +282,15 @@ class _LeaderDivWidgetState extends State<LeaderDivWidget>
                 Container(
                   width: 50.0,
                   height: 50.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color(0xFFCD7F32),
                     shape: BoxShape.circle,
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Text(
                       formatNumber(
-                        widget!.rank,
+                        widget.rank,
                         formatType: FormatType.compact,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(

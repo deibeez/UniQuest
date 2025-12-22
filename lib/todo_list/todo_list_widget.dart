@@ -7,14 +7,11 @@ import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_calendar.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'todo_list_model.dart';
 export 'todo_list_model.dart';
 
@@ -76,20 +73,20 @@ class _TodoListWidgetState extends State<TodoListWidget>
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFF1E1E1E),
+        backgroundColor: const Color(0xFF1E1E1E),
         body: Stack(
           children: [
             Column(
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                         child: Text(
                           'To-Do List ',
                           style:
@@ -103,9 +100,9 @@ class _TodoListWidgetState extends State<TodoListWidget>
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               120.0, 0.0, 0.0, 0.0),
                           child: Container(
                             width: 38.0,
@@ -118,7 +115,7 @@ class _TodoListWidgetState extends State<TodoListWidget>
                               ),
                             ),
                             child: Stack(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               children: [
                                 InkWell(
                                   splashColor: Colors.transparent,
@@ -130,7 +127,7 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                       ArchiveTasksWidget.routeName,
                                       queryParameters: {
                                         'taskID': serializeParam(
-                                          widget!.tasksrow?.taskId,
+                                          widget.tasksrow?.taskId,
                                           ParamType.String,
                                         ),
                                       }.withoutNulls,
@@ -156,10 +153,10 @@ class _TodoListWidgetState extends State<TodoListWidget>
                   color: FlutterFlowTheme.of(context).primaryText,
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                     child: FlutterFlowCalendar(
                       color: FlutterFlowTheme.of(context).primary,
                       iconColor: FlutterFlowTheme.of(context).secondaryText,
@@ -252,15 +249,15 @@ class _TodoListWidgetState extends State<TodoListWidget>
               ],
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 310.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 310.0, 0.0, 0.0),
                 child: Stack(
                   children: [
                     Column(
                       children: [
                         Align(
-                          alignment: Alignment(0.0, 0),
+                          alignment: const Alignment(0.0, 0),
                           child: FlutterFlowButtonTabBar(
                             useToggleButtonStyle: false,
                             labelStyle: FlutterFlowTheme.of(context)
@@ -304,9 +301,9 @@ class _TodoListWidgetState extends State<TodoListWidget>
                             borderWidth: 2.0,
                             borderRadius: 8.0,
                             elevation: 0.0,
-                            buttonMargin: EdgeInsetsDirectional.fromSTEB(
+                            buttonMargin: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 0.0, 8.0, 0.0),
-                            tabs: [
+                            tabs: const [
                               Tab(
                                 text: 'All',
                               ),
@@ -328,17 +325,17 @@ class _TodoListWidgetState extends State<TodoListWidget>
                             controller: _model.tabBarController,
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(4.0),
+                                padding: const EdgeInsets.all(4.0),
                                 child: SingleChildScrollView(
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, -0.25),
+                                            const AlignmentDirectional(0.0, -0.25),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 0.0, 15.0, 0.0),
                                           child: FutureBuilder<List<TasksRow>>(
                                             future: TasksTable().queryRows(
@@ -377,7 +374,7 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                                   snapshot.data!;
 
                                               return ListView.separated(
-                                                padding: EdgeInsets.symmetric(
+                                                padding: const EdgeInsets.symmetric(
                                                     vertical: 10.0),
                                                 primary: false,
                                                 shrinkWrap: true,
@@ -385,7 +382,7 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                                 itemCount:
                                                     listViewTasksRowList.length,
                                                 separatorBuilder: (_, __) =>
-                                                    SizedBox(height: 10.0),
+                                                    const SizedBox(height: 10.0),
                                                 itemBuilder:
                                                     (context, listViewIndex) {
                                                   final listViewTasksRow =
@@ -393,7 +390,7 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                                           listViewIndex];
                                                   return Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 15.0),
                                                     child: InkWell(
@@ -478,17 +475,17 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.all(4.0),
+                                padding: const EdgeInsets.all(4.0),
                                 child: SingleChildScrollView(
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, -0.25),
+                                            const AlignmentDirectional(0.0, -0.25),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 0.0, 15.0, 0.0),
                                           child: FutureBuilder<List<TasksRow>>(
                                             future: TasksTable().queryRows(
@@ -527,7 +524,7 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                                   snapshot.data!;
 
                                               return ListView.separated(
-                                                padding: EdgeInsets.symmetric(
+                                                padding: const EdgeInsets.symmetric(
                                                     vertical: 10.0),
                                                 primary: false,
                                                 shrinkWrap: true,
@@ -535,7 +532,7 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                                 itemCount:
                                                     listViewTasksRowList.length,
                                                 separatorBuilder: (_, __) =>
-                                                    SizedBox(height: 10.0),
+                                                    const SizedBox(height: 10.0),
                                                 itemBuilder:
                                                     (context, listViewIndex) {
                                                   final listViewTasksRow =
@@ -543,7 +540,7 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                                           listViewIndex];
                                                   return Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 15.0),
                                                     child: InkWell(
@@ -628,17 +625,17 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.all(4.0),
+                                padding: const EdgeInsets.all(4.0),
                                 child: SingleChildScrollView(
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, -0.25),
+                                            const AlignmentDirectional(0.0, -0.25),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 0.0, 15.0, 0.0),
                                           child: FutureBuilder<List<TasksRow>>(
                                             future: TasksTable().queryRows(
@@ -677,7 +674,7 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                                   snapshot.data!;
 
                                               return ListView.separated(
-                                                padding: EdgeInsets.symmetric(
+                                                padding: const EdgeInsets.symmetric(
                                                     vertical: 10.0),
                                                 primary: false,
                                                 shrinkWrap: true,
@@ -685,7 +682,7 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                                 itemCount:
                                                     listViewTasksRowList.length,
                                                 separatorBuilder: (_, __) =>
-                                                    SizedBox(height: 10.0),
+                                                    const SizedBox(height: 10.0),
                                                 itemBuilder:
                                                     (context, listViewIndex) {
                                                   final listViewTasksRow =
@@ -693,7 +690,7 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                                           listViewIndex];
                                                   return Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 15.0),
                                                     child: InkWell(
@@ -783,9 +780,9 @@ class _TodoListWidgetState extends State<TodoListWidget>
                       ],
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.7, 0.95),
+                      alignment: const AlignmentDirectional(0.7, 0.95),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             70.0, 16.0, 0.0, 16.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
@@ -807,7 +804,7 @@ class _TodoListWidgetState extends State<TodoListWidget>
                                   },
                                   child: Padding(
                                     padding: MediaQuery.viewInsetsOf(context),
-                                    child: AddNewTaskWidget(),
+                                    child: const AddNewTaskWidget(),
                                   ),
                                 );
                               },

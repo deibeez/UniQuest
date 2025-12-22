@@ -1,11 +1,7 @@
 import '/auth/supabase_auth/auth_util.dart';
 import '/backend/supabase/supabase.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'background_model.dart';
 export 'background_model.dart';
 
@@ -48,7 +44,7 @@ class _BackgroundWidgetState extends State<BackgroundWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
       child: InkWell(
         splashColor: Colors.transparent,
         focusColor: Colors.transparent,
@@ -59,17 +55,17 @@ class _BackgroundWidgetState extends State<BackgroundWidget> {
                 context: context,
                 builder: (alertDialogContext) {
                   return AlertDialog(
-                    title: Text('Do you want to equip this?'),
+                    title: const Text('Do you want to equip this?'),
                     actions: [
                       TextButton(
                         onPressed: () =>
                             Navigator.pop(alertDialogContext, false),
-                        child: Text('Cancel'),
+                        child: const Text('Cancel'),
                       ),
                       TextButton(
                         onPressed: () =>
                             Navigator.pop(alertDialogContext, true),
-                        child: Text('Confirm'),
+                        child: const Text('Confirm'),
                       ),
                     ],
                   );
@@ -79,7 +75,7 @@ class _BackgroundWidgetState extends State<BackgroundWidget> {
           if (confirmDialogResponse) {
             await ProfilesTable().update(
               data: {
-                'equipped_namecard': widget!.url,
+                'equipped_namecard': widget.url,
               },
               matchingRows: (rows) => rows.eqOrNull(
                 'id',
@@ -90,11 +86,11 @@ class _BackgroundWidgetState extends State<BackgroundWidget> {
               context: context,
               builder: (alertDialogContext) {
                 return AlertDialog(
-                  title: Text('Equipped'),
+                  title: const Text('Equipped'),
                   actions: [
                     TextButton(
                       onPressed: () => Navigator.pop(alertDialogContext),
-                      child: Text('Ok'),
+                      child: const Text('Ok'),
                     ),
                   ],
                 );
@@ -111,7 +107,7 @@ class _BackgroundWidgetState extends State<BackgroundWidget> {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(8.0),
             child: Image.network(
-              widget!.url!,
+              widget.url!,
               width: 200.0,
               height: 200.0,
               fit: BoxFit.cover,

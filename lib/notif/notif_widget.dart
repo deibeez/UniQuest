@@ -4,12 +4,9 @@ import '/components/mail_div/mail_div_widget.dart';
 import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'notif_model.dart';
 export 'notif_model.dart';
 
@@ -57,17 +54,17 @@ class _NotifWidgetState extends State<NotifWidget>
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFF1E1E1E),
+        backgroundColor: const Color(0xFF1E1E1E),
         body: Stack(
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 0.0, 0.0),
                     child: Text(
                       'Notifications',
                       style:
@@ -80,7 +77,7 @@ class _NotifWidgetState extends State<NotifWidget>
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(130.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(130.0, 0.0, 0.0, 0.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -91,12 +88,12 @@ class _NotifWidgetState extends State<NotifWidget>
                           context: context,
                           builder: (alertDialogContext) {
                             return AlertDialog(
-                              title: Text('Marked all as Read'),
+                              title: const Text('Marked all as Read'),
                               actions: [
                                 TextButton(
                                   onPressed: () =>
                                       Navigator.pop(alertDialogContext),
-                                  child: Text('Ok'),
+                                  child: const Text('Ok'),
                                 ),
                               ],
                             );
@@ -128,7 +125,7 @@ class _NotifWidgetState extends State<NotifWidget>
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 55.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 55.0, 0.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -166,11 +163,11 @@ class _NotifWidgetState extends State<NotifWidget>
                       return Container(
                         width: 390.0,
                         height: 40.0,
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Stack(
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   15.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 'Unread Mail Items:',
@@ -187,7 +184,7 @@ class _NotifWidgetState extends State<NotifWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   150.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 containerNotificationsRowList.length.toString(),
@@ -212,13 +209,13 @@ class _NotifWidgetState extends State<NotifWidget>
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 90.0, 10.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 90.0, 10.0, 0.0),
                 child: Column(
                   children: [
                     Align(
-                      alignment: Alignment(0.0, 0),
+                      alignment: const Alignment(0.0, 0),
                       child: FlutterFlowButtonTabBar(
                         useToggleButtonStyle: true,
                         labelStyle:
@@ -248,18 +245,18 @@ class _NotifWidgetState extends State<NotifWidget>
                         labelColor: FlutterFlowTheme.of(context).primaryText,
                         unselectedLabelColor:
                             FlutterFlowTheme.of(context).secondaryText,
-                        backgroundColor: Color(0x4C697535),
+                        backgroundColor: const Color(0x4C697535),
                         unselectedBackgroundColor:
                             FlutterFlowTheme.of(context).alternate,
-                        borderColor: Color(0xFFFFBD59),
+                        borderColor: const Color(0xFFFFBD59),
                         unselectedBorderColor:
                             FlutterFlowTheme.of(context).alternate,
                         borderWidth: 2.0,
                         borderRadius: 8.0,
                         elevation: 0.0,
                         buttonMargin:
-                            EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
-                        tabs: [
+                            const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                        tabs: const [
                           Tab(
                             text: 'Unread',
                             icon: Icon(
@@ -318,13 +315,13 @@ class _NotifWidgetState extends State<NotifWidget>
                                 scrollDirection: Axis.vertical,
                                 itemCount: listViewNotificationsRowList.length,
                                 separatorBuilder: (_, __) =>
-                                    SizedBox(height: 5.0),
+                                    const SizedBox(height: 5.0),
                                 itemBuilder: (context, listViewIndex) {
                                   final listViewNotificationsRow =
                                       listViewNotificationsRowList[
                                           listViewIndex];
                                   return Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 8.0, 0.0, 0.0),
                                     child: wrapWithModel(
                                       model: _model.mailDivModels1.getModel(
@@ -384,7 +381,7 @@ class _NotifWidgetState extends State<NotifWidget>
                                       listViewNotificationsRowList[
                                           listViewIndex];
                                   return Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 8.0, 0.0, 0.0),
                                     child: wrapWithModel(
                                       model: _model.mailDivModels2.getModel(

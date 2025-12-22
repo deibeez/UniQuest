@@ -10,7 +10,7 @@ class UserCosmeticsTable extends SupabaseTable<UserCosmeticsRow> {
 }
 
 class UserCosmeticsRow extends SupabaseDataRow {
-  UserCosmeticsRow(Map<String, dynamic> data) : super(data);
+  UserCosmeticsRow(super.data);
 
   @override
   SupabaseTable get table => UserCosmeticsTable();

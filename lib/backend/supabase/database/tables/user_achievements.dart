@@ -10,7 +10,7 @@ class UserAchievementsTable extends SupabaseTable<UserAchievementsRow> {
 }
 
 class UserAchievementsRow extends SupabaseDataRow {
-  UserAchievementsRow(Map<String, dynamic> data) : super(data);
+  UserAchievementsRow(super.data);
 
   @override
   SupabaseTable get table => UserAchievementsTable();

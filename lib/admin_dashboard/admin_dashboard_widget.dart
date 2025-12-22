@@ -4,14 +4,10 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'admin_dashboard_model.dart';
 export 'admin_dashboard_model.dart';
 
@@ -53,15 +49,15 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.698, 0),
-            end: Offset(0, 0),
+            begin: const Offset(0.698, 0),
+            end: const Offset(0, 0),
           ),
         ],
       ),
@@ -79,15 +75,15 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.698, 0),
-            end: Offset(0, 0),
+            begin: const Offset(0.698, 0),
+            end: const Offset(0, 0),
           ),
         ],
       ),
@@ -105,15 +101,15 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.698, 0),
-            end: Offset(0, 0),
+            begin: const Offset(0.698, 0),
+            end: const Offset(0, 0),
           ),
         ],
       ),
@@ -142,7 +138,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFF1F4F8),
+        backgroundColor: const Color(0xFFF1F4F8),
         body: SafeArea(
           top: true,
           child: SingleChildScrollView(
@@ -150,14 +146,14 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 10.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 10.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Stack(
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 0.0, 0.0, 0.0),
                             child: InkWell(
                               splashColor: Colors.transparent,
@@ -176,7 +172,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 50.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Dashboard',
@@ -184,7 +180,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                   .headlineMedium
                                   .override(
                                     fontFamily: 'Feather',
-                                    color: Color(0xFF14181B),
+                                    color: const Color(0xFF14181B),
                                     fontSize: 24.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
@@ -201,10 +197,10 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                     Container(
                       width: double.infinity,
                       height: 140.0,
-                      constraints: BoxConstraints(
+                      constraints: const BoxConstraints(
                         maxHeight: 140.0,
                       ),
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.white,
                         boxShadow: [
                           BoxShadow(
@@ -219,13 +215,13 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                       ),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 4.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 4.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 'Below is a summary of missions.',
@@ -238,7 +234,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                             .labelMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF57636C),
+                                      color: const Color(0xFF57636C),
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.normal,
@@ -250,7 +246,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 0.0),
                                 child: ListView(
                                   padding: EdgeInsets.zero,
@@ -259,7 +255,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                   scrollDirection: Axis.horizontal,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 8.0, 8.0),
                                       child: FutureBuilder<List<MissionsRow>>(
                                         future: MissionsTable().queryRows(
@@ -298,12 +294,12 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
                                               border: Border.all(
-                                                color: Color(0xFFE0E3E7),
+                                                color: const Color(0xFFE0E3E7),
                                                 width: 2.0,
                                               ),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(12.0),
+                                              padding: const EdgeInsets.all(12.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 crossAxisAlignment:
@@ -331,7 +327,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                     .fontStyle,
                                                           ),
                                                           color:
-                                                              Color(0xFF14181B),
+                                                              const Color(0xFF14181B),
                                                           fontSize: 36.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -345,7 +341,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 4.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -356,7 +352,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Feather',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF57636C),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -373,7 +369,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 8.0),
                                       child: FutureBuilder<List<MissionsRow>>(
                                         future: MissionsTable().queryRows(
@@ -409,12 +405,12 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
                                               border: Border.all(
-                                                color: Color(0xFFE0E3E7),
+                                                color: const Color(0xFFE0E3E7),
                                                 width: 2.0,
                                               ),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(12.0),
+                                              padding: const EdgeInsets.all(12.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 crossAxisAlignment:
@@ -442,7 +438,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                     .fontStyle,
                                                           ),
                                                           color:
-                                                              Color(0xFFEE8B60),
+                                                              const Color(0xFFEE8B60),
                                                           fontSize: 36.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -456,7 +452,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 4.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -467,7 +463,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Feather',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF57636C),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
@@ -484,7 +480,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 8.0),
                                       child: FutureBuilder<List<MissionsRow>>(
                                         future: MissionsTable().queryRows(
@@ -523,12 +519,12 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
                                               border: Border.all(
-                                                color: Color(0xFFE0E3E7),
+                                                color: const Color(0xFFE0E3E7),
                                                 width: 2.0,
                                               ),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(12.0),
+                                              padding: const EdgeInsets.all(12.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 crossAxisAlignment:
@@ -556,7 +552,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                                     .fontStyle,
                                                           ),
                                                           color:
-                                                              Color(0xFFEE8B60),
+                                                              const Color(0xFFEE8B60),
                                                           fontSize: 36.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -570,7 +566,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 4.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -581,7 +577,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                           .override(
                                                             fontFamily:
                                                                 'Feather',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFF57636C),
                                                             fontSize: 13.0,
                                                             letterSpacing: 0.0,
@@ -606,13 +602,13 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           16.0, 150.0, 16.0, 0.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 3.0,
                               color: Color(0x33000000),
@@ -625,13 +621,13 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 12.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -639,7 +635,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 12.0, 12.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -652,7 +648,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                 .headlineSmall
                                                 .override(
                                                   fontFamily: 'Feather',
-                                                  color: Color(0xFF14181B),
+                                                  color: const Color(0xFF14181B),
                                                   fontSize: 24.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.bold,
@@ -660,7 +656,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: Text(
                                               'Create a new habit mission for users.',
@@ -669,7 +665,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Feather',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.bold,
@@ -689,7 +685,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 12.0, 0.0, 12.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -717,7 +713,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                       padding: MediaQuery
                                                           .viewInsetsOf(
                                                               context),
-                                                      child: AddMissionWidget(),
+                                                      child: const AddMissionWidget(),
                                                     ),
                                                   );
                                                 },
@@ -727,10 +723,10 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                             text: 'Create Mission',
                                             options: FFButtonOptions(
                                               height: 40.0,
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
-                                              iconPadding: EdgeInsetsDirectional
+                                              iconPadding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 0.0, 0.0),
                                               color:
                                                   FlutterFlowTheme.of(context)
@@ -763,13 +759,13 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                           animationsMap['containerOnPageLoadAnimation4']!),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           16.0, 300.0, 16.0, 0.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 3.0,
                               color: Color(0x33000000),
@@ -782,13 +778,13 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 12.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -796,7 +792,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 12.0, 12.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -809,7 +805,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                 .headlineSmall
                                                 .override(
                                                   fontFamily: 'Feather',
-                                                  color: Color(0xFF14181B),
+                                                  color: const Color(0xFF14181B),
                                                   fontSize: 24.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.bold,
@@ -817,7 +813,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: Text(
                                               'Active missions are recorded here.',
@@ -826,7 +822,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Feather',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.bold,
@@ -846,7 +842,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 12.0, 0.0, 12.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -862,10 +858,10 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                             text: 'View Missions',
                                             options: FFButtonOptions(
                                               height: 40.0,
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
-                                              iconPadding: EdgeInsetsDirectional
+                                              iconPadding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 0.0, 0.0),
                                               color:
                                                   FlutterFlowTheme.of(context)
@@ -898,13 +894,13 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                           animationsMap['containerOnPageLoadAnimation5']!),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           16.0, 450.0, 16.0, 0.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 3.0,
                               color: Color(0x33000000),
@@ -917,13 +913,13 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 12.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -931,7 +927,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 12.0, 12.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -944,7 +940,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                 .headlineSmall
                                                 .override(
                                                   fontFamily: 'Feather',
-                                                  color: Color(0xFF14181B),
+                                                  color: const Color(0xFF14181B),
                                                   fontSize: 24.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.bold,
@@ -952,7 +948,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: Text(
                                               'Past missions are recorded here.',
@@ -961,7 +957,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                                   .labelMedium
                                                   .override(
                                                     fontFamily: 'Feather',
-                                                    color: Color(0xFF57636C),
+                                                    color: const Color(0xFF57636C),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.bold,
@@ -981,7 +977,7 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 12.0, 0.0, 12.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -996,10 +992,10 @@ class _AdminDashboardWidgetState extends State<AdminDashboardWidget>
                                             text: 'View Archive',
                                             options: FFButtonOptions(
                                               height: 40.0,
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
-                                              iconPadding: EdgeInsetsDirectional
+                                              iconPadding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 0.0, 0.0),
                                               color:
                                                   FlutterFlowTheme.of(context)

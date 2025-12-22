@@ -6,14 +6,12 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/walkthroughs/task_creation.dart';
-import 'dart:ui';
 import '/index.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart'
     show TutorialCoachMark;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tsa_creation_page_model.dart';
 export 'tsa_creation_page_model.dart';
 
@@ -84,7 +82,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 16.0, 0.0, 0.0),
                         child: Text(
                           'Create New Task',
@@ -92,7 +90,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                               .headlineMedium
                               .override(
                                 fontFamily: 'Feather',
-                                color: Color(0xFFFFBD59),
+                                color: const Color(0xFFFFBD59),
                                 fontSize: 24.0,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.bold,
@@ -101,7 +99,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(24.0, 4.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(24.0, 4.0, 0.0, 0.0),
                         child: Text(
                           'Below are your task details',
                           style:
@@ -120,7 +118,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 0.0),
                             child: TextFormField(
                               controller: _model.tasknameTextController,
@@ -138,7 +136,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                             .labelMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF606A85),
+                                      color: const Color(0xFF606A85),
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -155,7 +153,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                             .labelMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF606A85),
+                                      color: const Color(0xFF606A85),
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -164,28 +162,28 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                           .fontStyle,
                                     ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFFE5E7EB),
                                     width: 2.0,
                                   ),
                                   borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFF6F61EF),
                                     width: 2.0,
                                   ),
                                   borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFFFF5963),
                                     width: 2.0,
                                   ),
                                   borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFFFF5963),
                                     width: 2.0,
                                   ),
@@ -193,7 +191,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                 ),
                                 filled: true,
                                 fillColor: Colors.white,
-                                contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 24.0, 20.0, 24.0),
                               ),
                               style: FlutterFlowTheme.of(context)
@@ -205,7 +203,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF15161E),
+                                    color: const Color(0xFF15161E),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -213,7 +211,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                              cursorColor: Color(0xFF6F61EF),
+                              cursorColor: const Color(0xFF6F61EF),
                               validator: _model.tasknameTextControllerValidator
                                   .asValidator(context),
                             ).addWalkthrough(
@@ -222,7 +220,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 0.0),
                             child: TextFormField(
                               controller: _model.tagsTextController,
@@ -240,7 +238,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                             .labelMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF606A85),
+                                      color: const Color(0xFF606A85),
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -257,7 +255,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                             .labelMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF606A85),
+                                      color: const Color(0xFF606A85),
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -266,28 +264,28 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                           .fontStyle,
                                     ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFFE5E7EB),
                                     width: 2.0,
                                   ),
                                   borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFF6F61EF),
                                     width: 2.0,
                                   ),
                                   borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFFFF5963),
                                     width: 2.0,
                                   ),
                                   borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFFFF5963),
                                     width: 2.0,
                                   ),
@@ -295,7 +293,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                 ),
                                 filled: true,
                                 fillColor: Colors.white,
-                                contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 24.0, 20.0, 24.0),
                               ),
                               style: FlutterFlowTheme.of(context)
@@ -307,7 +305,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF15161E),
+                                    color: const Color(0xFF15161E),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -315,7 +313,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                              cursorColor: Color(0xFF6F61EF),
+                              cursorColor: const Color(0xFF6F61EF),
                               validator: _model.tagsTextControllerValidator
                                   .asValidator(context),
                             ).addWalkthrough(
@@ -324,14 +322,14 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 0.0),
                               child: FlutterFlowDropDown<String>(
                                 controller: _model.priorityValueController ??=
                                     FormFieldController<String>(null),
-                                options: ['High', 'Medium', 'Low'],
+                                options: const ['High', 'Medium', 'Low'],
                                 onChanged: (val) => safeSetState(
                                     () => _model.priorityValue = val),
                                 width: 538.7,
@@ -345,7 +343,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF606A85),
+                                      color: const Color(0xFF606A85),
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                       fontStyle: FlutterFlowTheme.of(context)
@@ -364,7 +362,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                 borderColor: Colors.transparent,
                                 borderWidth: 0.0,
                                 borderRadius: 8.0,
-                                margin: EdgeInsetsDirectional.fromSTEB(
+                                margin: const EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 12.0, 0.0),
                                 hidesUnderline: true,
                                 isOverButton: false,
@@ -377,7 +375,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 0.0),
                             child: TextFormField(
                               controller: _model.notesTextController,
@@ -395,7 +393,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                             .labelMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF606A85),
+                                      color: const Color(0xFF606A85),
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -412,7 +410,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                             .labelMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF606A85),
+                                      color: const Color(0xFF606A85),
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -421,28 +419,28 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                           .fontStyle,
                                     ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFFE5E7EB),
                                     width: 2.0,
                                   ),
                                   borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFF6F61EF),
                                     width: 2.0,
                                   ),
                                   borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFFFF5963),
                                     width: 2.0,
                                   ),
                                   borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFFFF5963),
                                     width: 2.0,
                                   ),
@@ -450,7 +448,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                 ),
                                 filled: true,
                                 fillColor: Colors.white,
-                                contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                     20.0, 24.0, 20.0, 24.0),
                               ),
                               style: FlutterFlowTheme.of(context)
@@ -462,7 +460,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF15161E),
+                                    color: const Color(0xFF15161E),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -470,7 +468,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                              cursorColor: Color(0xFF6F61EF),
+                              cursorColor: const Color(0xFF6F61EF),
                               validator: _model.notesTextControllerValidator
                                   .asValidator(context),
                             ).addWalkthrough(
@@ -481,14 +479,14 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                         ],
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 12.0, 24.0, 24.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.05),
+                              alignment: const AlignmentDirectional(0.0, 0.05),
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   Navigator.pop(context);
@@ -496,32 +494,32 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                 text: 'Cancel',
                                 options: FFButtonOptions(
                                   height: 44.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color: Colors.white,
                                   textStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Feather',
-                                        color: Color(0xFF15161E),
+                                        color: const Color(0xFF15161E),
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.bold,
                                       ),
                                   elevation: 0.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xFFE5E7EB),
                                     width: 2.0,
                                   ),
                                   borderRadius: BorderRadius.circular(12.0),
-                                  hoverColor: Color(0xFFE5E7EB),
-                                  hoverBorderSide: BorderSide(
+                                  hoverColor: const Color(0xFFE5E7EB),
+                                  hoverBorderSide: const BorderSide(
                                     color: Color(0xFFE5E7EB),
                                     width: 2.0,
                                   ),
-                                  hoverTextColor: Color(0xFF15161E),
+                                  hoverTextColor: const Color(0xFF15161E),
                                   hoverElevation: 3.0,
                                 ),
                               ).addWalkthrough(
@@ -530,7 +528,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.05),
+                              alignment: const AlignmentDirectional(0.0, 0.05),
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   await TasksTable().insert({
@@ -552,13 +550,13 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                     context: context,
                                     builder: (alertDialogContext) {
                                       return AlertDialog(
-                                        title: Text('Success!'),
-                                        content: Text('New Task Created!'),
+                                        title: const Text('Success!'),
+                                        content: const Text('New Task Created!'),
                                         actions: [
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: Text('Ok'),
+                                            child: const Text('Ok'),
                                           ),
                                         ],
                                       );
@@ -568,11 +566,11 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                 text: 'Save Task',
                                 options: FFButtonOptions(
                                   height: 44.0,
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
-                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: Color(0xFFFFBD59),
+                                  color: const Color(0xFFFFBD59),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -583,17 +581,17 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                                         fontWeight: FontWeight.bold,
                                       ),
                                   elevation: 3.0,
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Colors.transparent,
                                     width: 1.0,
                                   ),
                                   borderRadius: BorderRadius.circular(12.0),
-                                  hoverColor: Color(0x4D9489F5),
-                                  hoverBorderSide: BorderSide(
+                                  hoverColor: const Color(0x4D9489F5),
+                                  hoverBorderSide: const BorderSide(
                                     color: Color(0xFF6F61EF),
                                     width: 1.0,
                                   ),
-                                  hoverTextColor: Color(0xFF15161E),
+                                  hoverTextColor: const Color(0xFF15161E),
                                   hoverElevation: 0.0,
                                 ),
                               ).addWalkthrough(
@@ -617,7 +615,7 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                       context.pushNamed(
                         HomeWidget.routeName,
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.leftToRight,
                           ),
@@ -628,10 +626,10 @@ class _TsaCreationPageWidgetState extends State<TsaCreationPageWidget> {
                     options: FFButtonOptions(
                       height: 40.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: Color(0xFF1A9C0E),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: const Color(0xFF1A9C0E),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 font: GoogleFonts.manrope(

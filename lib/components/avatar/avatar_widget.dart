@@ -2,10 +2,7 @@ import '/auth/supabase_auth/auth_util.dart';
 import '/backend/supabase/supabase.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'avatar_model.dart';
 export 'avatar_model.dart';
 
@@ -57,15 +54,15 @@ class _AvatarWidgetState extends State<AvatarWidget> {
               context: context,
               builder: (alertDialogContext) {
                 return AlertDialog(
-                  title: Text('Do you want to equip this?'),
+                  title: const Text('Do you want to equip this?'),
                   actions: [
                     TextButton(
                       onPressed: () => Navigator.pop(alertDialogContext, false),
-                      child: Text('Cancel'),
+                      child: const Text('Cancel'),
                     ),
                     TextButton(
                       onPressed: () => Navigator.pop(alertDialogContext, true),
-                      child: Text('Confirm'),
+                      child: const Text('Confirm'),
                     ),
                   ],
                 );
@@ -75,7 +72,7 @@ class _AvatarWidgetState extends State<AvatarWidget> {
         if (confirmDialogResponse) {
           await ProfilesTable().update(
             data: {
-              'avatar_url': widget!.avatarurl,
+              'avatar_url': widget.avatarurl,
             },
             matchingRows: (rows) => rows.eqOrNull(
               'id',
@@ -86,11 +83,11 @@ class _AvatarWidgetState extends State<AvatarWidget> {
             context: context,
             builder: (alertDialogContext) {
               return AlertDialog(
-                title: Text('Equipped'),
+                title: const Text('Equipped'),
                 actions: [
                   TextButton(
                     onPressed: () => Navigator.pop(alertDialogContext),
-                    child: Text('Ok'),
+                    child: const Text('Ok'),
                   ),
                 ],
               );
@@ -103,7 +100,7 @@ class _AvatarWidgetState extends State<AvatarWidget> {
         height: 120.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             bottomLeft: Radius.circular(12.0),
             bottomRight: Radius.circular(12.0),
             topLeft: Radius.circular(12.0),
@@ -116,11 +113,11 @@ class _AvatarWidgetState extends State<AvatarWidget> {
         child: Stack(
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10.0),
                 child: Image.network(
-                  widget!.avatarurl!,
+                  widget.avatarurl!,
                   width: 105.0,
                   height: 105.0,
                   fit: BoxFit.cover,

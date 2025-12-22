@@ -2,12 +2,9 @@ import '/backend/supabase/supabase.dart';
 import '/components/leader_div/leader_div_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'leaderboard_model.dart';
 export 'leaderboard_model.dart';
 
@@ -55,7 +52,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFF1E1E1E),
+        backgroundColor: const Color(0xFF1E1E1E),
         body: SafeArea(
           top: true,
           child: Stack(
@@ -66,13 +63,13 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                   Container(
                     width: MediaQuery.sizeOf(context).width * 1.0,
                     height: 100.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0xFF1E1E1E),
                     ),
                     child: Stack(
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               15.0, 15.0, 0.0, 0.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
@@ -90,7 +87,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.01, -0.04),
+                          alignment: const AlignmentDirectional(0.01, -0.04),
                           child: Text(
                             'LEADERBOARD',
                             style: FlutterFlowTheme.of(context)
@@ -104,9 +101,9 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 5.29),
+                          alignment: const AlignmentDirectional(0.0, 5.29),
                           child: Padding(
-                            padding: EdgeInsets.all(24.0),
+                            padding: const EdgeInsets.all(24.0),
                             child: Text(
                               'The rankings are based on the amount of XP each users have.',
                               style: FlutterFlowTheme.of(context)
@@ -127,11 +124,11 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                 ],
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 130.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 130.0, 0.0, 0.0),
                 child: Column(
                   children: [
                     Align(
-                      alignment: Alignment(0.0, 0),
+                      alignment: const Alignment(0.0, 0),
                       child: TabBar(
                         isScrollable: true,
                         labelColor: FlutterFlowTheme.of(context).primaryText,
@@ -163,21 +160,21 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                 ),
                         indicatorColor: FlutterFlowTheme.of(context).primary,
                         tabs: [
-                          Tab(
+                          const Tab(
                             text: 'Diamond',
                             icon: Icon(
                               Icons.diamond_rounded,
                               color: Color(0xFF8DE8FF),
                             ),
                           ),
-                          Tab(
+                          const Tab(
                             text: 'Platinum',
                             icon: FaIcon(
                               FontAwesomeIcons.star,
                               color: Color(0xFFD9D9D9),
                             ),
                           ),
-                          Tab(
+                          const Tab(
                             text: 'Gold',
                             icon: FaIcon(
                               FontAwesomeIcons.crown,
@@ -191,7 +188,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                               color: FlutterFlowTheme.of(context).secondaryText,
                             ),
                           ),
-                          Tab(
+                          const Tab(
                             text: 'Bronze',
                             icon: FaIcon(
                               FontAwesomeIcons.solidCopyright,
@@ -216,12 +213,12 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                         controller: _model.tabBarController,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 5.0, 0.0, 5.0, 0.0),
                             child: Stack(
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 10.0, 0.0, 0.0),
                                   child: Container(
                                     width: double.infinity,
@@ -230,7 +227,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(0.0),
                                         bottomRight: Radius.circular(0.0),
                                         topLeft: Radius.circular(20.0),
@@ -242,7 +239,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(16.0),
+                                      padding: const EdgeInsets.all(16.0),
                                       child: FutureBuilder<
                                           List<LeaderboardViewRow>>(
                                         future:
@@ -285,7 +282,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                                 listViewLeaderboardViewRowList
                                                     .length,
                                             separatorBuilder: (_, __) =>
-                                                SizedBox(height: 5.0),
+                                                const SizedBox(height: 5.0),
                                             itemBuilder:
                                                 (context, listViewIndex) {
                                               final listViewLeaderboardViewRow =
@@ -330,12 +327,12 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 5.0, 0.0, 5.0, 0.0),
                             child: Stack(
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 10.0, 0.0, 0.0),
                                   child: Container(
                                     width: double.infinity,
@@ -344,7 +341,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(0.0),
                                         bottomRight: Radius.circular(0.0),
                                         topLeft: Radius.circular(20.0),
@@ -356,7 +353,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(16.0),
+                                      padding: const EdgeInsets.all(16.0),
                                       child: FutureBuilder<
                                           List<LeaderboardViewRow>>(
                                         future:
@@ -399,7 +396,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                                 listViewLeaderboardViewRowList
                                                     .length,
                                             separatorBuilder: (_, __) =>
-                                                SizedBox(height: 5.0),
+                                                const SizedBox(height: 5.0),
                                             itemBuilder:
                                                 (context, listViewIndex) {
                                               final listViewLeaderboardViewRow =
@@ -444,12 +441,12 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 5.0, 0.0, 5.0, 0.0),
                             child: Stack(
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 10.0, 0.0, 0.0),
                                   child: Container(
                                     width: double.infinity,
@@ -458,7 +455,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(0.0),
                                         bottomRight: Radius.circular(0.0),
                                         topLeft: Radius.circular(20.0),
@@ -470,7 +467,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(16.0),
+                                      padding: const EdgeInsets.all(16.0),
                                       child: FutureBuilder<
                                           List<LeaderboardViewRow>>(
                                         future:
@@ -513,7 +510,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                                 listViewLeaderboardViewRowList
                                                     .length,
                                             separatorBuilder: (_, __) =>
-                                                SizedBox(height: 5.0),
+                                                const SizedBox(height: 5.0),
                                             itemBuilder:
                                                 (context, listViewIndex) {
                                               final listViewLeaderboardViewRow =
@@ -558,12 +555,12 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 5.0, 0.0, 5.0, 0.0),
                             child: Stack(
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 10.0, 0.0, 0.0),
                                   child: Container(
                                     width: double.infinity,
@@ -572,7 +569,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(0.0),
                                         bottomRight: Radius.circular(0.0),
                                         topLeft: Radius.circular(20.0),
@@ -584,7 +581,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(16.0),
+                                      padding: const EdgeInsets.all(16.0),
                                       child: FutureBuilder<
                                           List<LeaderboardViewRow>>(
                                         future:
@@ -627,7 +624,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                                 listViewLeaderboardViewRowList
                                                     .length,
                                             separatorBuilder: (_, __) =>
-                                                SizedBox(height: 5.0),
+                                                const SizedBox(height: 5.0),
                                             itemBuilder:
                                                 (context, listViewIndex) {
                                               final listViewLeaderboardViewRow =
@@ -672,12 +669,12 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 5.0, 0.0, 5.0, 0.0),
                             child: Stack(
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 10.0, 0.0, 0.0),
                                   child: Container(
                                     width: double.infinity,
@@ -686,7 +683,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(0.0),
                                         bottomRight: Radius.circular(0.0),
                                         topLeft: Radius.circular(20.0),
@@ -698,7 +695,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(16.0),
+                                      padding: const EdgeInsets.all(16.0),
                                       child: FutureBuilder<
                                           List<LeaderboardViewRow>>(
                                         future:
@@ -741,7 +738,7 @@ class _LeaderboardWidgetState extends State<LeaderboardWidget>
                                                 listViewLeaderboardViewRowList
                                                     .length,
                                             separatorBuilder: (_, __) =>
-                                                SizedBox(height: 5.0),
+                                                const SizedBox(height: 5.0),
                                             itemBuilder:
                                                 (context, listViewIndex) {
                                               final listViewLeaderboardViewRow =

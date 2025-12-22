@@ -10,7 +10,7 @@ class AchievementDefsTable extends SupabaseTable<AchievementDefsRow> {
 }
 
 class AchievementDefsRow extends SupabaseDataRow {
-  AchievementDefsRow(Map<String, dynamic> data) : super(data);
+  AchievementDefsRow(super.data);
 
   @override
   SupabaseTable get table => AchievementDefsTable();

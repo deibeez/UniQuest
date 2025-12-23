@@ -26,15 +26,26 @@ jobs:
       with:
         flutter-version: '3.38.5'
         channel: 'stable'
+    
+    - name: Decode Keystore
+      run: |
+        echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/upload-keystore.jks
+        
+    - name: Create keystore.properties
+      run: |
+        echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" > android/keystore.properties
+        echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/keystore.properties
+        echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/keystore.properties
+        echo "storeFile=upload-keystore.jks" >> android/keystore.properties
       
     - name: Get dependencies
       run: flutter pub get
       
     - name: Build APK
-      run: flutter build apk --debug
+      run: flutter build apk --release
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: app-debug
-        path: build/app/outputs/flutter-apk/app-debug.apk
+        name: app-release
+        path: build/app/outputs/flutter-apk/app-release.apk

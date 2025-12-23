@@ -67,9 +67,14 @@ android {
    signingConfigs {
        release {
            if (keystorePropertiesFile.exists()) {
+               def keystoreFile = new File(keystoreProperties['storeFile'])
+               if (!keystoreFile.isAbsolute()) {
+                   keystoreFile = new File(projectDir, keystoreProperties['storeFile'])
+               }
+               
                keyAlias keystoreProperties['keyAlias']
                keyPassword keystoreProperties['keyPassword']
-               storeFile file("${projectDir}/" + keystoreProperties['storeFile'])
+               storeFile keystoreFile
                storePassword keystoreProperties['storePassword']
            }
        }

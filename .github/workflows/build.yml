@@ -30,6 +30,8 @@ jobs:
     - name: Decode Keystore
       run: |
         echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/upload-keystore.jks
+        ls -lh android/app/upload-keystore.jks
+        file android/app/upload-keystore.jks
         
     - name: Create keystore.properties
       run: |
@@ -37,12 +39,21 @@ jobs:
         echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/keystore.properties
         echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/keystore.properties
         echo "storeFile=upload-keystore.jks" >> android/keystore.properties
+        cat android/keystore.properties
       
     - name: Get dependencies
       run: flutter pub get
+    
+    - name: Clear Gradle cache
+      run: cd android && ./gradlew clean
       
     - name: Build APK
-      run: flutter build apk --release
+      run: flutter build apk --release -v
+    
+    - name: Verify APK signature
+      run: |
+        ls -lh build/app/outputs/flutter-apk/app-release.apk
+        file build/app/outputs/flutter-apk/app-release.apk
       
     - name: Upload APK to Artifacts
       uses: actions/upload-artifact@v4

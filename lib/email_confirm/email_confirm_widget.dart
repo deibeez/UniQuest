@@ -166,7 +166,7 @@ class _EmailConfirmWidgetState extends State<EmailConfirmWidget>
                         ),
                         FFButtonWidget(
                           onPressed: () async {
-                            context.goNamed('Welcome');
+                            context.goNamed('LoginRedirect');
                           },
                           text: 'Continue to Login',
                           options: FFButtonOptions(

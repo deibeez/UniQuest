@@ -7,11 +7,13 @@ class LottieBurstOverlay extends StatefulWidget {
     required this.lottieAsset,
     this.size = 300.0,
     this.duration = const Duration(milliseconds: 2000),
+    this.repeat = false,
   });
 
   final String lottieAsset;
   final double size;
   final Duration duration;
+  final bool repeat;
 
   @override
   State<LottieBurstOverlay> createState() => _LottieBurstOverlayState();
@@ -52,6 +54,8 @@ class LottieBurstOverlay extends StatefulWidget {
     required BuildContext context,
     String lottieAsset = 'assets/jsons/Confetti.json',
     double size = 400.0,
+    bool repeat = false,
+    Duration? duration,
   }) {
     final overlay = Overlay.of(context);
     late OverlayEntry overlayEntry;
@@ -62,6 +66,8 @@ class LottieBurstOverlay extends StatefulWidget {
           child: LottieBurstOverlay(
             lottieAsset: lottieAsset,
             size: size,
+            repeat: repeat,
+            duration: duration ?? const Duration(milliseconds: 2000),
           ),
         ),
       ),
@@ -131,7 +137,7 @@ class _LottieBurstOverlayState extends State<LottieBurstOverlay>
       child: Lottie.asset(
         widget.lottieAsset,
         controller: _controller,
-        repeat: false,
+        repeat: widget.repeat,
         fit: BoxFit.contain,
       ),
     );

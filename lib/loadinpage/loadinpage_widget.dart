@@ -36,13 +36,6 @@ class _LoadinpageWidgetState extends State<LoadinpageWidget>
 
   final animationsMap = <String, AnimationInfo>{};
 
-  // Lottie compositions for preloading
-  LottieComposition? _rocketComposition;
-  LottieComposition? _fireComposition;
-  LottieComposition? _confettiComposition;
-  LottieComposition? _businessmanComposition;
-  LottieComposition? _rainbowCatComposition;
-
   @override
   void initState() {
     super.initState();
@@ -156,25 +149,11 @@ class _LoadinpageWidgetState extends State<LoadinpageWidget>
 
     // Precache Lottie animations used throughout the app
     try {
-      _rocketComposition = await AssetLottie(
-        'assets/jsons/Rocket_in_space.json',
-      ).load();
-
-      _fireComposition = await AssetLottie(
-        'assets/jsons/Fire.json',
-      ).load();
-
-      _confettiComposition = await AssetLottie(
-        'assets/jsons/Confetti.json',
-      ).load();
-
-      _businessmanComposition = await AssetLottie(
-        'assets/jsons/Businessman flies up with rocket.json',
-      ).load();
-
-      _rainbowCatComposition = await AssetLottie(
-        'assets/jsons/black rainbow cat.json',
-      ).load();
+      await AssetLottie('assets/jsons/Rocket_in_space.json').load();
+      await AssetLottie('assets/jsons/Fire.json').load();
+      await AssetLottie('assets/jsons/Confetti.json').load();
+      await AssetLottie('assets/jsons/Businessman flies up with rocket.json').load();
+      await AssetLottie('assets/jsons/black rainbow cat.json').load();
 
       debugPrint('✅ All Lottie animations preloaded successfully');
     } catch (e) {

@@ -84,17 +84,30 @@ class _FrameWidgetState extends State<FrameWidget> {
             LottieBurstOverlay.showCentered(
               context: context,
               lottieAsset: 'assets/jsons/black rainbow cat.json',
+              size: 250.0,
+              repeat: false,
+              duration: const Duration(milliseconds: 4000), // ~2 loops
             );
           }
           await showDialog(
             context: context,
             builder: (alertDialogContext) {
               return AlertDialog(
-                title: const Text('Equipped'),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16.0),
+                ),
+                title: const Text('Equipped!'),
+                content: const Text(
+                  'Your new frame has been equipped successfully.',
+                  style: TextStyle(fontSize: 14.0),
+                ),
                 actions: [
                   TextButton(
                     onPressed: () => Navigator.pop(alertDialogContext),
-                    child: const Text('Ok'),
+                    style: TextButton.styleFrom(
+                      foregroundColor: FlutterFlowTheme.of(context).primary,
+                    ),
+                    child: const Text('Got it'),
                   ),
                 ],
               );

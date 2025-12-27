@@ -80,9 +80,14 @@ class _MenuTaskWidgetState extends State<MenuTaskWidget> {
                         context: context,
                         builder: (alertDialogContext) {
                           return AlertDialog(
-                            title: const Text(
-                                'Are you certain you want to delete this?'),
-                            content: const Text('Confirm'),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16.0),
+                            ),
+                            title: const Text('Delete Task?'),
+                            content: const Text(
+                              'This task will be permanently deleted. This action cannot be undone.',
+                              style: TextStyle(fontSize: 14.0),
+                            ),
                             actions: [
                               TextButton(
                                 onPressed: () =>
@@ -92,7 +97,10 @@ class _MenuTaskWidgetState extends State<MenuTaskWidget> {
                               TextButton(
                                 onPressed: () =>
                                     Navigator.pop(alertDialogContext, true),
-                                child: const Text('Confirm'),
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.red,
+                                ),
+                                child: const Text('Delete'),
                               ),
                             ],
                           );

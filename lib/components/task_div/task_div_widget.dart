@@ -163,7 +163,7 @@ class _TaskDivWidgetState extends State<TaskDivWidget> {
                         child: Text(
                           valueOrDefault<String>(
                             widget.tasks?.description,
-                            'des',
+                            'no notes',
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
@@ -214,7 +214,7 @@ class _TaskDivWidgetState extends State<TaskDivWidget> {
                         },
                         text: valueOrDefault<String>(
                           widget.tasks?.priority,
-                          'prio',
+                          'no priority',
                         ),
                         options: FFButtonOptions(
                           height: 23.0,
